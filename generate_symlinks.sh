@@ -13,6 +13,8 @@ for tool in `ls *.phar`; do
     binary=`echo ${tool} | sed "s/.phar//"`
     if [[ "$binary" =~ "phpcb-" ]]; then
 	binary="phpcb"
+    elif [[ "$binary" =~ "phpDocumentor" ]]; then
+	binary="phpdoc"
     fi
     
     ${lnpath} -s ${mypath}/${tool} ${targetpath}/${binary}

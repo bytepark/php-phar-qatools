@@ -3,7 +3,8 @@ php-phar-qatools
 
 Holds different php qa tools as phar file
 
-The script generate_symlinks.sh should be run as root. It creates symlinks to all tools into /usr/local/bin.
+The script generate_symlinks.sh should be run via sudo. 
+It creates symlinks to all tools into /usr/local/bin.
 
 Included tools:
 

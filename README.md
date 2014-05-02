@@ -3,6 +3,8 @@ php-phar-qatools
 
 Holds different php qa tools as phar file
 
+The script generate_symlinks.sh should be run as root. It creates symlinks to all tools into /usr/local/bin.
+
 Included tools:
 
 * PHP_Depend 1.1.0 (pdepend.phar)

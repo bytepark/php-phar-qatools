@@ -17,6 +17,6 @@ for tool in `ls *.phar`; do
 	binary="phpdoc"
     fi
     
-    ${lnpath} -s ${mypath}/${tool} ${targetpath}/${binary}
+    ${lnpath} -sf ${mypath}/${tool} ${targetpath}/${binary}
     echo "+ ${targetpath}/${binary}"
 done

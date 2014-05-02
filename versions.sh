@@ -11,13 +11,15 @@ for tool in `ls *.phar`; do
     output=`php $tool --version | sed "s/ version//" |cut -d " " -f 1-2`
 
     if [ "$output" == "Console Tool" ]; then
-	return="${return}\n* phpcb ${phpcbversion}"
+	return="${return}\n* phpcb ${phpcbversion} (${tool})"
     elif [ "$tool" == "phpcbf.phar" ]; then
 	line=`echo "${output}" | sed "s/PHP_CodeSniffer/PHP Code Beautifier and Fixer/"`
-	return="${return}\n* ${line}"
-	x=1
+	return="${return}\n* ${line} (${tool})"
+    elif [ "$tool" == "php-cs-fixer.phar" ]; then
+	line=`php $tool --version | sed "s/ version//" | cut -d " " -f 1-4`
+	return="${return}\n* ${line} (${tool})"
     else
-	return="${return}\n* ${output}"
+	return="${return}\n* ${output} (${tool})"
     fi
 done
 

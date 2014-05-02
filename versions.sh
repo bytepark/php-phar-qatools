@@ -8,7 +8,7 @@ phpcbversion=`ls phpcb* |sed "s/phpcb-//" |sed "s/.phar//"`
 
 # use all tools to get their version string
 for tool in `ls *.phar`; do
-    output=`php $tool --version | sed "s/ version//" |cut -d " " -f 1-2 | sed "s/\r//"`
+    output=`php $tool --version | sed "s/ version//" |cut -d " " -f 1-2`
     if [ "$output" == "Console Tool" ]; then
 	return="${return}\n* phpcb ${phpcbversion}"
     else
@@ -18,5 +18,5 @@ done
 
 sed -i '/tools:/,$d' README.md
 
-echo -e  "Included tools:\n$return/" >> README.md
+echo -e  "Included tools:\n$return" >> README.md
 

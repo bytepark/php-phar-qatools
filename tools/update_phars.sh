@@ -11,5 +11,5 @@ wget -O phpdcd.phar https://phar.phpunit.de/phpdcd.phar
 wget -O phpDocumentor.phar http://www.phpdoc.org/phpDocumentor.phar
 wget -O phpdox.phar http://phpdox.de/releases/phpdox.phar
 wget -O phploc.phar https://phar.phpunit.de/phploc.phar
-# phpmd - does not have a version-independent url
+wget -O phpmd.phar http://static.phpmd.org/php/latest/phpmd.phar
 wget -O phpunit.phar https://phar.phpunit.de/phpunit.phar

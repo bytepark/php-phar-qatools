@@ -7,6 +7,7 @@ lnpath=`which ln`
 
 mylocation="$(readlink -fn -- "$0")"
 mypath=`dirname $mylocation`
+linkpath=`dirname $mypath`
 
 # loop all tools and create their symlink
 for tool in `ls *.phar`; do
@@ -17,6 +18,6 @@ for tool in `ls *.phar`; do
 	binary="phpdoc"
     fi
     
-    ${lnpath} -sf ${mypath}/${tool} ${targetpath}/${binary}
+    ${lnpath} -sf ${linkpath}/${tool} ${targetpath}/${binary}
     echo "+ ${targetpath}/${binary}"
 done

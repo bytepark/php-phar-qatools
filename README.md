@@ -12,7 +12,7 @@ Included tools:
 * PHP Code Beautifier and Fixer 2.2.0 (*phpcbf.phar*)
 * PHP_CodeBrowser 1.1.1 (*phpcb.phar*)
 * phpcpd 2.0.1 (*phpcpd.phar*)
-* PHP CS Fixer 1.4.1 (*php-cs-fixer.phar*)
+* PHP CS Fixer 1.4.2 (*php-cs-fixer.phar*)
 * PHP_CodeSniffer 2.2.0 (*phpcs.phar*)
 * phpdcd 1.0.2 (*phpdcd.phar*)
 * phpDocumentor v2.8.1 (*phpDocumentor.phar*)

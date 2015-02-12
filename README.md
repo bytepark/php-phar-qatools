@@ -19,4 +19,4 @@ Included tools:
 * phpDox 0.7.0 (*phpdox.phar*)
 * phploc 2.0.6 (*phploc.phar*)
 * PHPMD 2.2.0 (*phpmd.phar*)
-* PHPUnit 4.4.5 (*phpunit.phar*)
+* PHPUnit 4.5.0 (*phpunit.phar*)

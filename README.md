@@ -8,7 +8,7 @@ It creates symlinks to all tools into /usr/local/bin.
 
 Included tools:
 
-* PDepend 2.0.4 (*pdepend.phar*)
+* PDepend 2.0.6 (*pdepend.phar*)
 * PHP Code Beautifier and Fixer 2.2.0 (*phpcbf.phar*)
 * PHP_CodeBrowser 1.1.1 (*phpcb.phar*)
 * phpcpd 2.0.1 (*phpcpd.phar*)
@@ -18,5 +18,5 @@ Included tools:
 * phpDocumentor v2.8.2 (*phpDocumentor.phar*)
 * phpDox 0.7.0 (*phpdox.phar*)
 * phploc 2.0.6 (*phploc.phar*)
-* PHPMD 2.2.0 (*phpmd.phar*)
+* PHPMD 2.2.1 (*phpmd.phar*)
 * PHPUnit 4.5.0 (*phpunit.phar*)

@@ -8,7 +8,7 @@ if ($_SERVER['SCRIPT_NAME'] != '-') {
 }
 
 define('__PHPLOC_PHAR__', str_replace(DIRECTORY_SEPARATOR, '/', $phar));
-define('__PHPLOC_PHAR_ROOT__', 'phar://phploc-2.1.1.phar');
+define('__PHPLOC_PHAR_ROOT__', 'phar://phploc-2.1.2.phar');
 
 spl_autoload_register(
   function ($class)
@@ -157,12 +157,12 @@ spl_autoload_register(
       $class = strtolower($class);
 
       if (isset($classes[$class])) {
-          require 'phar://phploc-2.1.1.phar' . $classes[$class];
+          require 'phar://phploc-2.1.2.phar' . $classes[$class];
       }
   }
 );
 
-Phar::mapPhar('phploc-2.1.1.phar');
+Phar::mapPhar('phploc-2.1.2.phar');
 
 if (isset($_SERVER['argv'][1]) && $_SERVER['argv'][1] == '--manifest') {
     print file_get_contents(__PHPLOC_PHAR_ROOT__ . '/manifest.txt');
@@ -173,31 +173,31 @@ $application = new SebastianBergmann\PHPLOC\CLI\Application;
 $application->run();
 
 __HALT_COMPILER(); ?>
-‘-  à          phploc-2.1.1.phar       fdomdocument/fDOMElement.phpŒ5  t^*UŒ5  %÷ ∂         fdomdocument/fDOMException.php®  t^*U®  B’%∂         fdomdocument/fDOMDocument.php•U  t^*U•U  Ú”Í∂         fdomdocument/XPathQuery.phpj  t^*Uj  Ä˜ñ∂         fdomdocument/fDOMNode.php{  t^*U{  ŒÓå˙∂         fdomdocument/fDOMXPath.php%  t^*U%  õªˆ∂      $   fdomdocument/XPathQueryException.php¯  t^*U¯  èŸ÷∂      !   fdomdocument/css/NthChildRule.phpk  t^*Uk  f≤]ú∂         fdomdocument/css/NotRule.phpò  t^*Uò  ™!8_∂         fdomdocument/css/Translator.phpÇ  t^*UÇ  0≤L3∂         fdomdocument/css/RegexRule.php«  t^*U«  ˘ÆÅs∂      "   fdomdocument/css/RuleInterface.php–   t^*U–   Œ,ó·∂      $   fdomdocument/css/DollarEqualRule.phpw  t^*Uw  }ÿ∂      %   fdomdocument/fDOMDocumentFragment.phpC  t^*UC  }ŒQı∂         fdomdocument/autoload.phpæ  t^*Uæ  !ÂH∂         manifest.txt≠   t^*U≠   ' -T∂      .   symfony/yaml/Symfony/Component/Yaml/Inline.phphM  t^*UhM  Ä</ ∂      @   symfony/yaml/Symfony/Component/Yaml/Exception/ParseException.php  t^*U  Œ79ã∂      ?   symfony/yaml/Symfony/Component/Yaml/Exception/DumpException.php“  t^*U“  ÿô’ö∂      D   symfony/yaml/Symfony/Component/Yaml/Exception/ExceptionInterface.php∆  t^*U∆  Ó+≠l∂      B   symfony/yaml/Symfony/Component/Yaml/Exception/RuntimeException.php  t^*U  œ|ç-∂      .   symfony/yaml/Symfony/Component/Yaml/Dumper.phpÅ	  t^*UÅ	  l£D∂      ,   symfony/yaml/Symfony/Component/Yaml/Yaml.php  t^*U  .|m9∂      1   symfony/yaml/Symfony/Component/Yaml/Unescaper.phpó  t^*Uó  â6‰∂      .   symfony/yaml/Symfony/Component/Yaml/Parser.php}h  t^*U}h  Vy\∂      /   symfony/yaml/Symfony/Component/Yaml/Escaper.php  t^*U  ·O3'∂      7   symfony/finder/Symfony/Component/Finder/SplFileInfo.php  t^*U  s1∂      2   symfony/finder/Symfony/Component/Finder/Finder.phpÿU  t^*UÿU  ÖGå±∂      0   symfony/finder/Symfony/Component/Finder/Glob.php_  t^*U_  zÍÓç∂      M   symfony/finder/Symfony/Component/Finder/Exception/AdapterFailureException.phpÅ  t^*UÅ  >√@∂      K   symfony/finder/Symfony/Component/Finder/Exception/AccessDeniedException.php´  t^*U´   cWﬁ∂      S   symfony/finder/Symfony/Component/Finder/Exception/OperationNotPermitedException.php¢  t^*U¢  P∂£ô∂      R   symfony/finder/Symfony/Component/Finder/Exception/ShellCommandFailureException.php9  t^*U9  ≤º∂      H   symfony/finder/Symfony/Component/Finder/Exception/ExceptionInterface.phpÔ  t^*UÔ  Ä7∂      G   symfony/finder/Symfony/Component/Finder/Comparator/NumberComparator.php
-  t^*U
-  lØdJ∂      E   symfony/finder/Symfony/Component/Finder/Comparator/DateComparator.phpπ  t^*Uπ  ∏'e∂      A   symfony/finder/Symfony/Component/Finder/Comparator/Comparator.php  t^*U  Áù∂∂      D   symfony/finder/Symfony/Component/Finder/Adapter/AdapterInterface.php†  t^*U†  jã™∂      C   symfony/finder/Symfony/Component/Finder/Adapter/AbstractAdapter.php≈  t^*U≈  Ö=Ïƒ∂      G   symfony/finder/Symfony/Component/Finder/Adapter/AbstractFindAdapter.phpà)  t^*Uà)  ÔCØ∂      >   symfony/finder/Symfony/Component/Finder/Adapter/PhpAdapter.php{
-  t^*U{
+‘-  à          phploc-2.1.2.phar       fdomdocument/fDOMElement.phpŒ5  b}dUŒ5  %÷ ∂         fdomdocument/fDOMException.php®  b}dU®  B’%∂         fdomdocument/fDOMDocument.php•U  b}dU•U  Ú”Í∂         fdomdocument/XPathQuery.phpj  b}dUj  Ä˜ñ∂         fdomdocument/fDOMNode.php{  b}dU{  ŒÓå˙∂         fdomdocument/fDOMXPath.php%  b}dU%  õªˆ∂      $   fdomdocument/XPathQueryException.php¯  b}dU¯  èŸ÷∂      !   fdomdocument/css/NthChildRule.phpk  b}dUk  f≤]ú∂         fdomdocument/css/NotRule.phpò  b}dUò  ™!8_∂         fdomdocument/css/Translator.phpÇ  b}dUÇ  0≤L3∂         fdomdocument/css/RegexRule.php«  b}dU«  ˘ÆÅs∂      "   fdomdocument/css/RuleInterface.php–   b}dU–   Œ,ó·∂      $   fdomdocument/css/DollarEqualRule.phpw  b}dUw  }ÿ∂      %   fdomdocument/fDOMDocumentFragment.phpC  b}dUC  }ŒQı∂         fdomdocument/autoload.phpæ  b}dUæ  !ÂH∂         manifest.txt≠   b}dU≠   ‚	<∂      .   symfony/yaml/Symfony/Component/Yaml/Inline.phphM  b}dUhM  Ä</ ∂      @   symfony/yaml/Symfony/Component/Yaml/Exception/ParseException.php  b}dU  Œ79ã∂      ?   symfony/yaml/Symfony/Component/Yaml/Exception/DumpException.php“  b}dU“  ÿô’ö∂      D   symfony/yaml/Symfony/Component/Yaml/Exception/ExceptionInterface.php∆  b}dU∆  Ó+≠l∂      B   symfony/yaml/Symfony/Component/Yaml/Exception/RuntimeException.php  b}dU  œ|ç-∂      .   symfony/yaml/Symfony/Component/Yaml/Dumper.phpÅ	  b}dUÅ	  l£D∂      ,   symfony/yaml/Symfony/Component/Yaml/Yaml.php  b}dU  .|m9∂      1   symfony/yaml/Symfony/Component/Yaml/Unescaper.phpó  b}dUó  â6‰∂      .   symfony/yaml/Symfony/Component/Yaml/Parser.phpuh  b}dUuh  6Q≤}∂      /   symfony/yaml/Symfony/Component/Yaml/Escaper.php  b}dU  Kã„∂      7   symfony/finder/Symfony/Component/Finder/SplFileInfo.php  b}dU  s1∂      2   symfony/finder/Symfony/Component/Finder/Finder.phpˆU  b}dUˆU  6iÿv∂      0   symfony/finder/Symfony/Component/Finder/Glob.php_  b}dU_  zÍÓç∂      M   symfony/finder/Symfony/Component/Finder/Exception/AdapterFailureException.phpÅ  b}dUÅ  >√@∂      K   symfony/finder/Symfony/Component/Finder/Exception/AccessDeniedException.php´  b}dU´   cWﬁ∂      S   symfony/finder/Symfony/Component/Finder/Exception/OperationNotPermitedException.php¢  b}dU¢  P∂£ô∂      R   symfony/finder/Symfony/Component/Finder/Exception/ShellCommandFailureException.php9  b}dU9  ≤º∂      H   symfony/finder/Symfony/Component/Finder/Exception/ExceptionInterface.phpÔ  b}dUÔ  Ä7∂      G   symfony/finder/Symfony/Component/Finder/Comparator/NumberComparator.php
+  b}dU
+  lØdJ∂      E   symfony/finder/Symfony/Component/Finder/Comparator/DateComparator.phpπ  b}dUπ  ∏'e∂      A   symfony/finder/Symfony/Component/Finder/Comparator/Comparator.php  b}dU  Áù∂∂      D   symfony/finder/Symfony/Component/Finder/Adapter/AdapterInterface.php†  b}dU†  jã™∂      C   symfony/finder/Symfony/Component/Finder/Adapter/AbstractAdapter.php≈  b}dU≈  Ö=Ïƒ∂      G   symfony/finder/Symfony/Component/Finder/Adapter/AbstractFindAdapter.phpà)  b}dUà)  ÔCØ∂      >   symfony/finder/Symfony/Component/Finder/Adapter/PhpAdapter.php{
+  b}dU{
   9!ê2∂      B   symfony/finder/Symfony/Component/Finder/Adapter/BsdFindAdapter.phpÒ
-  t^*UÒ
+  b}dUÒ
   Ë›kA∂      B   symfony/finder/Symfony/Component/Finder/Adapter/GnuFindAdapter.phpË
-  t^*UË
-  Ä Ê∂      I   symfony/finder/Symfony/Component/Finder/Iterator/CustomFilterIterator.php  t^*U  ⁄–ßë∂      L   symfony/finder/Symfony/Component/Finder/Iterator/SizeRangeFilterIterator.php¢  t^*U¢  §ß∞∂      C   symfony/finder/Symfony/Component/Finder/Iterator/FilterIterator.phpü  t^*Uü  „Ω,G∂      K   symfony/finder/Symfony/Component/Finder/Iterator/FilenameFilterIterator.phpπ  t^*Uπ  ªJc∂      K   symfony/finder/Symfony/Component/Finder/Iterator/FileTypeFilterIterator.phpY  t^*UY  ô]∞%∂      M   symfony/finder/Symfony/Component/Finder/Iterator/DepthRangeFilterIterator.phpÂ  t^*UÂ  -,Ï∂      O   symfony/finder/Symfony/Component/Finder/Iterator/MultiplePcreFilterIterator.phpÎ  t^*UÎ  ÒW)<∂      S   symfony/finder/Symfony/Component/Finder/Iterator/ExcludeDirectoryFilterIterator.phpô  t^*Uô  “J∂      E   symfony/finder/Symfony/Component/Finder/Iterator/SortableIterator.phpÈ	  t^*UÈ	  pæ—e∂      O   symfony/finder/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php  t^*U  '_Ôä∂      N   symfony/finder/Symfony/Component/Finder/Iterator/FilecontentFilterIterator.phpõ  t^*Uõ  $là∂      G   symfony/finder/Symfony/Component/Finder/Iterator/PathFilterIterator.phpõ  t^*Uõ  Weô,∂      F   symfony/finder/Symfony/Component/Finder/Iterator/FilePathsIterator.phpå
-  t^*Uå
-  ◊∑ﬂ]∂      L   symfony/finder/Symfony/Component/Finder/Iterator/DateRangeFilterIterator.php≈  t^*U≈  ß'˝Q∂      A   symfony/finder/Symfony/Component/Finder/Expression/Expression.php%
-  t^*U%
-  KL§Ë∂      ;   symfony/finder/Symfony/Component/Finder/Expression/Glob.php  t^*U  äE±∂      E   symfony/finder/Symfony/Component/Finder/Expression/ValueInterface.phpH  t^*UH  –¯"∂      <   symfony/finder/Symfony/Component/Finder/Expression/Regex.php˙  t^*U˙  ·∏;A∂      7   symfony/finder/Symfony/Component/Finder/Shell/Shell.phpì  t^*Uì  ÌñqØ∂      9   symfony/finder/Symfony/Component/Finder/Shell/Command.phpî  t^*Uî  z"6∂      G   symfony/console/Symfony/Component/Console/Event/ConsoleCommandEvent.php8  t^*U8  jÎ"∂      I   symfony/console/Symfony/Component/Console/Event/ConsoleTerminateEvent.php  t^*U  {e∂      I   symfony/console/Symfony/Component/Console/Event/ConsoleExceptionEvent.php=  t^*U=  ∑¶≈∂      @   symfony/console/Symfony/Component/Console/Event/ConsoleEvent.php∏  t^*U∏  æı
-û∂      3   symfony/console/Symfony/Component/Console/Shell.phpı  t^*Uı  ƒ‚∂      B   symfony/console/Symfony/Component/Console/Logger/ConsoleLogger.phpÂ  t^*UÂ  ∫C%6∂      9   symfony/console/Symfony/Component/Console/Application.phpºì  t^*Uºì  :"π∂      E   symfony/console/Symfony/Component/Console/Question/ChoiceQuestion.php,  t^*U,  /|ˇI∂      ?   symfony/console/Symfony/Component/Console/Question/Question.phpl  t^*Ul  ﬂA<∂      K   symfony/console/Symfony/Component/Console/Question/ConfirmationQuestion.php$  t^*U$  Âº∏!∂      B   symfony/console/Symfony/Component/Console/Output/ConsoleOutput.phpÖ  t^*UÖ  ‡Cs·∂      ?   symfony/console/Symfony/Component/Console/Output/NullOutput.phpﬂ  t^*Uﬂ  8á∂      D   symfony/console/Symfony/Component/Console/Output/OutputInterface.php!  t^*U!  G-g∂      K   symfony/console/Symfony/Component/Console/Output/ConsoleOutputInterface.phpK  t^*UK  Ï≈0û∂      A   symfony/console/Symfony/Component/Console/Output/StreamOutput.php∂  t^*U∂  LiTé∂      ;   symfony/console/Symfony/Component/Console/Output/Output.php9  t^*U9  âÆˇÍ∂      C   symfony/console/Symfony/Component/Console/Output/BufferedOutput.phph  t^*Uh  t|X4∂      B   symfony/console/Symfony/Component/Console/Tester/CommandTester.php-  t^*U-  gl`„∂      F   symfony/console/Symfony/Component/Console/Tester/ApplicationTester.php[  t^*U[  /ôI∂      @   symfony/console/Symfony/Component/Console/Helper/ProgressBar.phpÙB  t^*UÙB  ™q	q∂      E   symfony/console/Symfony/Component/Console/Helper/InputAwareHelper.phpÎ  t^*UÎ  ÏìÎÀ∂      C   symfony/console/Symfony/Component/Console/Helper/QuestionHelper.php@1  t^*U@1  ò;ƒ‡∂      C   symfony/console/Symfony/Component/Console/Helper/ProgressHelper.php//  t^*U//  
-”r∂      ?   symfony/console/Symfony/Component/Console/Helper/TableStyle.phpO  t^*UO  §^x“∂      D   symfony/console/Symfony/Component/Console/Helper/HelperInterface.phpÛ  t^*UÛ  †zÖ◊∂      B   symfony/console/Symfony/Component/Console/Helper/ProcessHelper.phpŸ  t^*UŸ  ◊*E0∂      I   symfony/console/Symfony/Component/Console/Helper/DebugFormatterHelper.phpH  t^*UH  úö{∂      A   symfony/console/Symfony/Component/Console/Helper/DialogHelper.phpÆ@  t^*UÆ@  Y˛ú®∂      @   symfony/console/Symfony/Component/Console/Helper/TableHelper.php  t^*U   ∂      >   symfony/console/Symfony/Component/Console/Helper/HelperSet.php€	  t^*U€	  ›ñ™Ó∂      E   symfony/console/Symfony/Component/Console/Helper/DescriptorHelper.php 
-  t^*U 
-  9u¥:∂      ;   symfony/console/Symfony/Component/Console/Helper/Helper.phpL  t^*UL  duZ∂      D   symfony/console/Symfony/Component/Console/Helper/FormatterHelper.php	  t^*U	  "å*°∂      C   symfony/console/Symfony/Component/Console/Helper/TableSeparator.phpï  t^*Uï  n	‚∂      :   symfony/console/Symfony/Component/Console/Helper/Table.php^(  t^*U^(  »÷›˚∂      >   symfony/console/Symfony/Component/Console/Input/ArrayInput.phpK  t^*UK  ˘˛™∂      ?   symfony/console/Symfony/Component/Console/Input/InputOption.php:  t^*U:  {PÊ∂      9   symfony/console/Symfony/Component/Console/Input/Input.phpË  t^*UË  ÙÂõ∂      B   symfony/console/Symfony/Component/Console/Input/InputInterface.php  t^*U  Ö)òˇ∂      ?   symfony/console/Symfony/Component/Console/Input/StringInput.php•
-  t^*U•
-  II∂      G   symfony/console/Symfony/Component/Console/Input/InputAwareInterface.php^  t^*U^  9KËh∂      A   symfony/console/Symfony/Component/Console/Input/InputArgument.phpø  t^*Uø  µÌw∂      =   symfony/console/Symfony/Component/Console/Input/ArgvInput.php–)  t^*U–)  ª%è1∂      C   symfony/console/Symfony/Component/Console/Input/InputDefinition.phpu/  t^*Uu/  #xÿÓ∂      O   symfony/console/Symfony/Component/Console/Descriptor/ApplicationDescription.php…  t^*U…  –’v~∂      G   symfony/console/Symfony/Component/Console/Descriptor/TextDescriptor.php©#  t^*U©#  *qˆ∂      K   symfony/console/Symfony/Component/Console/Descriptor/MarkdownDescriptor.php/  t^*U/  “+∂      G   symfony/console/Symfony/Component/Console/Descriptor/JsonDescriptor.php-  t^*U-  ÀT∂      L   symfony/console/Symfony/Component/Console/Descriptor/DescriptorInterface.php·  t^*U·  JZ0<∂      F   symfony/console/Symfony/Component/Console/Descriptor/XmlDescriptor.php &  t^*U &  M1õQ∂      C   symfony/console/Symfony/Component/Console/Descriptor/Descriptor.php   t^*U   8{"$∂      Q   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyleStack.phpÂ
-  t^*UÂ
-  9£B€∂      G   symfony/console/Symfony/Component/Console/Formatter/OutputFormatter.php  t^*U  »†Kê∂      P   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterInterface.php⁄  t^*U⁄  zò≥∂      L   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyle.phpl  t^*Ul  ªcEL∂      U   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyleInterface.phpü  t^*Uü  5è¶∂      A   symfony/console/Symfony/Component/Console/Command/HelpCommand.phpb
-  t^*Ub
-  "˝$∂      =   symfony/console/Symfony/Component/Console/Command/Command.php–E  t^*U–E  ≤D˚@∂      A   symfony/console/Symfony/Component/Console/Command/ListCommand.phpº
-  t^*Uº
-  [ë"∂      ;   symfony/console/Symfony/Component/Console/ConsoleEvents.php7  t^*U7  E¡•ë∂         finder-facade/FinderFacade.php—  t^*U—  ’ç≠±∂         finder-facade/Configuration.php{  t^*U{  rò°æ∂         src/CLI/Command.phpÍ  t^*UÍ  ‘íY∂         src/CLI/Application.php=  t^*U=  Ö©G(∂         src/Analyser.phpqd  t^*Uqd  ≥›∂         src/Log/Text.phpm"  t^*Um"  ‰(z;∂         src/Log/CSV/Single.php  t^*U  ˚!˝‹∂         src/Log/CSV/History.php  t^*U  äs‰d∂         src/Log/XML.php.  t^*U.  œ«tL∂         git/Git.phpé  t^*Ué  ÿ™Ã∂         git/Exception/Exception.php‹  t^*U‹  ⁄gü∂      "   git/Exception/RuntimeException.php	  t^*U	  ≥‚\∂         version/Version.phpH  t^*UH  ˇÍ'∂      <?php
+  b}dUË
+  Ä Ê∂      I   symfony/finder/Symfony/Component/Finder/Iterator/CustomFilterIterator.php  b}dU  ⁄–ßë∂      L   symfony/finder/Symfony/Component/Finder/Iterator/SizeRangeFilterIterator.php¢  b}dU¢  §ß∞∂      C   symfony/finder/Symfony/Component/Finder/Iterator/FilterIterator.phpü  b}dUü  „Ω,G∂      K   symfony/finder/Symfony/Component/Finder/Iterator/FilenameFilterIterator.phpπ  b}dUπ  ªJc∂      K   symfony/finder/Symfony/Component/Finder/Iterator/FileTypeFilterIterator.phpY  b}dUY  ô]∞%∂      M   symfony/finder/Symfony/Component/Finder/Iterator/DepthRangeFilterIterator.phpÂ  b}dUÂ  -,Ï∂      O   symfony/finder/Symfony/Component/Finder/Iterator/MultiplePcreFilterIterator.phpÎ  b}dUÎ  ÒW)<∂      S   symfony/finder/Symfony/Component/Finder/Iterator/ExcludeDirectoryFilterIterator.phpô  b}dUô  “J∂      E   symfony/finder/Symfony/Component/Finder/Iterator/SortableIterator.phpÈ	  b}dUÈ	  pæ—e∂      O   symfony/finder/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php  b}dU  '_Ôä∂      N   symfony/finder/Symfony/Component/Finder/Iterator/FilecontentFilterIterator.phpõ  b}dUõ  $là∂      G   symfony/finder/Symfony/Component/Finder/Iterator/PathFilterIterator.phpõ  b}dUõ  Weô,∂      F   symfony/finder/Symfony/Component/Finder/Iterator/FilePathsIterator.phpå
+  b}dUå
+  ◊∑ﬂ]∂      L   symfony/finder/Symfony/Component/Finder/Iterator/DateRangeFilterIterator.php≈  b}dU≈  ß'˝Q∂      A   symfony/finder/Symfony/Component/Finder/Expression/Expression.php%
+  b}dU%
+  KL§Ë∂      ;   symfony/finder/Symfony/Component/Finder/Expression/Glob.php  b}dU  äE±∂      E   symfony/finder/Symfony/Component/Finder/Expression/ValueInterface.phpH  b}dUH  –¯"∂      <   symfony/finder/Symfony/Component/Finder/Expression/Regex.php˙  b}dU˙  ·∏;A∂      7   symfony/finder/Symfony/Component/Finder/Shell/Shell.phpì  b}dUì  ÌñqØ∂      9   symfony/finder/Symfony/Component/Finder/Shell/Command.phpî  b}dUî  z"6∂      G   symfony/console/Symfony/Component/Console/Event/ConsoleCommandEvent.php8  b}dU8  jÎ"∂      I   symfony/console/Symfony/Component/Console/Event/ConsoleTerminateEvent.php  b}dU  {e∂      I   symfony/console/Symfony/Component/Console/Event/ConsoleExceptionEvent.php=  b}dU=  ∑¶≈∂      @   symfony/console/Symfony/Component/Console/Event/ConsoleEvent.php∏  b}dU∏  æı
+û∂      3   symfony/console/Symfony/Component/Console/Shell.phpı  b}dUı  ƒ‚∂      B   symfony/console/Symfony/Component/Console/Logger/ConsoleLogger.phpÂ  b}dUÂ  ∫C%6∂      9   symfony/console/Symfony/Component/Console/Application.phpÂì  b}dUÂì  [uü∂      E   symfony/console/Symfony/Component/Console/Question/ChoiceQuestion.php,  b}dU,  /|ˇI∂      ?   symfony/console/Symfony/Component/Console/Question/Question.phpl  b}dUl  ﬂA<∂      K   symfony/console/Symfony/Component/Console/Question/ConfirmationQuestion.php$  b}dU$  Âº∏!∂      B   symfony/console/Symfony/Component/Console/Output/ConsoleOutput.phpÖ  b}dUÖ  ‡Cs·∂      ?   symfony/console/Symfony/Component/Console/Output/NullOutput.phpﬂ  b}dUﬂ  8á∂      D   symfony/console/Symfony/Component/Console/Output/OutputInterface.php!  b}dU!  G-g∂      K   symfony/console/Symfony/Component/Console/Output/ConsoleOutputInterface.phpK  b}dUK  Ï≈0û∂      A   symfony/console/Symfony/Component/Console/Output/StreamOutput.php∂  b}dU∂  LiTé∂      ;   symfony/console/Symfony/Component/Console/Output/Output.php9  b}dU9  âÆˇÍ∂      C   symfony/console/Symfony/Component/Console/Output/BufferedOutput.phph  b}dUh  t|X4∂      B   symfony/console/Symfony/Component/Console/Tester/CommandTester.phpK  b}dUK  t¿Ië∂      F   symfony/console/Symfony/Component/Console/Tester/ApplicationTester.php[  b}dU[  /ôI∂      @   symfony/console/Symfony/Component/Console/Helper/ProgressBar.phpÙB  b}dUÙB  ™q	q∂      E   symfony/console/Symfony/Component/Console/Helper/InputAwareHelper.phpÎ  b}dUÎ  ÏìÎÀ∂      C   symfony/console/Symfony/Component/Console/Helper/QuestionHelper.php@1  b}dU@1  ò;ƒ‡∂      C   symfony/console/Symfony/Component/Console/Helper/ProgressHelper.php//  b}dU//  
+”r∂      ?   symfony/console/Symfony/Component/Console/Helper/TableStyle.phpO  b}dUO  §^x“∂      D   symfony/console/Symfony/Component/Console/Helper/HelperInterface.phpÛ  b}dUÛ  †zÖ◊∂      B   symfony/console/Symfony/Component/Console/Helper/ProcessHelper.phpŸ  b}dUŸ  ◊*E0∂      I   symfony/console/Symfony/Component/Console/Helper/DebugFormatterHelper.phpH  b}dUH  úö{∂      A   symfony/console/Symfony/Component/Console/Helper/DialogHelper.php•@  b}dU•@  Ë4)Ö∂      @   symfony/console/Symfony/Component/Console/Helper/TableHelper.php  b}dU   ∂      >   symfony/console/Symfony/Component/Console/Helper/HelperSet.php€	  b}dU€	  ›ñ™Ó∂      E   symfony/console/Symfony/Component/Console/Helper/DescriptorHelper.php 
+  b}dU 
+  9u¥:∂      ;   symfony/console/Symfony/Component/Console/Helper/Helper.phpL  b}dUL  duZ∂      D   symfony/console/Symfony/Component/Console/Helper/FormatterHelper.php	  b}dU	  "å*°∂      C   symfony/console/Symfony/Component/Console/Helper/TableSeparator.phpï  b}dUï  n	‚∂      :   symfony/console/Symfony/Component/Console/Helper/Table.phpg(  b}dUg(  Dø"∂      >   symfony/console/Symfony/Component/Console/Input/ArrayInput.phpK  b}dUK  ˘˛™∂      ?   symfony/console/Symfony/Component/Console/Input/InputOption.php:  b}dU:  {PÊ∂      9   symfony/console/Symfony/Component/Console/Input/Input.phpË  b}dUË  ÙÂõ∂      B   symfony/console/Symfony/Component/Console/Input/InputInterface.php  b}dU  Ö)òˇ∂      ?   symfony/console/Symfony/Component/Console/Input/StringInput.php•
+  b}dU•
+  II∂      G   symfony/console/Symfony/Component/Console/Input/InputAwareInterface.php^  b}dU^  9KËh∂      A   symfony/console/Symfony/Component/Console/Input/InputArgument.phpø  b}dUø  µÌw∂      =   symfony/console/Symfony/Component/Console/Input/ArgvInput.php–)  b}dU–)  ª%è1∂      C   symfony/console/Symfony/Component/Console/Input/InputDefinition.phpu/  b}dUu/  #xÿÓ∂      O   symfony/console/Symfony/Component/Console/Descriptor/ApplicationDescription.php  b}dU  ‘)≈∂      G   symfony/console/Symfony/Component/Console/Descriptor/TextDescriptor.phpß#  b}dUß#  !ìßœ∂      K   symfony/console/Symfony/Component/Console/Descriptor/MarkdownDescriptor.php/  b}dU/  “+∂      G   symfony/console/Symfony/Component/Console/Descriptor/JsonDescriptor.php-  b}dU-  ÀT∂      L   symfony/console/Symfony/Component/Console/Descriptor/DescriptorInterface.php·  b}dU·  JZ0<∂      F   symfony/console/Symfony/Component/Console/Descriptor/XmlDescriptor.php &  b}dU &  M1õQ∂      C   symfony/console/Symfony/Component/Console/Descriptor/Descriptor.php   b}dU   8{"$∂      Q   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyleStack.phpÂ
+  b}dUÂ
+  9£B€∂      G   symfony/console/Symfony/Component/Console/Formatter/OutputFormatter.php  b}dU  »†Kê∂      P   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterInterface.php⁄  b}dU⁄  zò≥∂      L   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyle.phpl  b}dUl  ªcEL∂      U   symfony/console/Symfony/Component/Console/Formatter/OutputFormatterStyleInterface.phpü  b}dUü  5è¶∂      A   symfony/console/Symfony/Component/Console/Command/HelpCommand.phpb
+  b}dUb
+  "˝$∂      =   symfony/console/Symfony/Component/Console/Command/Command.php–E  b}dU–E  ≤D˚@∂      A   symfony/console/Symfony/Component/Console/Command/ListCommand.phpº
+  b}dUº
+  [ë"∂      ;   symfony/console/Symfony/Component/Console/ConsoleEvents.php7  b}dU7  E¡•ë∂         finder-facade/FinderFacade.php—  b}dU—  ’ç≠±∂         finder-facade/Configuration.php{  b}dU{  rò°æ∂         src/CLI/Command.phpÍ  b}dUÍ  ‘íY∂         src/CLI/Application.php=  b}dU=  bœ¶∂         src/Analyser.phpßd  b}dUßd  ∞∆∂         src/Log/Text.phpm"  b}dUm"  ‰(z;∂         src/Log/CSV/Single.php  b}dU  ˚!˝‹∂         src/Log/CSV/History.php  b}dU  äs‰d∂         src/Log/XML.php.  b}dU.  œ«tL∂         git/Git.phpé  b}dUé  ÿ™Ã∂         git/Exception/Exception.php‹  b}dU‹  ⁄gü∂      "   git/Exception/RuntimeException.php	  b}dU	  ≥‚\∂         version/Version.phpH  b}dUH  ˇÍ'∂      <?php
 /**
  * Copyright (c) 2010-2013 Arne Blankerts <arne@blankerts.de>
  * All rights reserved.
@@ -2347,12 +2347,12 @@ spl_autoload_register(
     }
 );
 // @codeCoverageIgnoreEnd
-phploc/phploc: 2.1.1
+phploc/phploc: 2.1.2
 sebastian/finder-facade: 1.1.0
 sebastian/git: 2.0.1
 sebastian/version: 1.0.5
-symfony/console: v2.6.6
-symfony/finder: v2.6.6
+symfony/console: v2.6.7
+symfony/finder: v2.6.7
 theseer/fdomdocument: 1.6.0
 <?php
 
@@ -3526,7 +3526,7 @@ class Parser
                 // array
                 if (!isset($values['value']) || '' == trim($values['value'], ' ') || 0 === strpos(ltrim($values['value'], ' '), '#')) {
                     $c = $this->getRealCurrentLineNb() + 1;
-                    $parser = new Parser($c);
+                    $parser = new self($c);
                     $parser->refs = &$this->refs;
                     $data[] = $parser->parse($this->getNextEmbedBlock(null, true), $exceptionOnInvalidType, $objectSupport, $objectForMap);
                 } else {
@@ -3535,7 +3535,7 @@ class Parser
                     ) {
                         // this is a compact notation element, add to next block and parse
                         $c = $this->getRealCurrentLineNb();
-                        $parser = new Parser($c);
+                        $parser = new self($c);
                         $parser->refs = &$this->refs;
 
                         $block = $values['value'];
@@ -3592,7 +3592,7 @@ class Parser
                             $value = $this->getNextEmbedBlock();
                         }
                         $c = $this->getRealCurrentLineNb() + 1;
-                        $parser = new Parser($c);
+                        $parser = new self($c);
                         $parser->refs = &$this->refs;
                         $parsed = $parser->parse($value, $exceptionOnInvalidType, $objectSupport, $objectForMap);
 
@@ -3643,7 +3643,7 @@ class Parser
                         }
                     } else {
                         $c = $this->getRealCurrentLineNb() + 1;
-                        $parser = new Parser($c);
+                        $parser = new self($c);
                         $parser->refs = &$this->refs;
                         $value = $parser->parse($this->getNextEmbedBlock(), $exceptionOnInvalidType, $objectSupport, $objectForMap);
                         // Spec: Keys MUST be unique; first one wins.
@@ -4163,11 +4163,11 @@ class Escaper
                                      "\x18",  "\x19",  "\x1a",  "\x1b",  "\x1c",  "\x1d",  "\x1e",  "\x1f",
                                      "\xc2\x85", "\xc2\xa0", "\xe2\x80\xa8", "\xe2\x80\xa9",);
     private static $escaped = array('\\\\', '\\"', '\\\\', '\\"',
-                                     "\\0",   "\\x01", "\\x02", "\\x03", "\\x04", "\\x05", "\\x06", "\\a",
-                                     "\\b",   "\\t",   "\\n",   "\\v",   "\\f",   "\\r",   "\\x0e", "\\x0f",
-                                     "\\x10", "\\x11", "\\x12", "\\x13", "\\x14", "\\x15", "\\x16", "\\x17",
-                                     "\\x18", "\\x19", "\\x1a", "\\e",   "\\x1c", "\\x1d", "\\x1e", "\\x1f",
-                                     "\\N", "\\_", "\\L", "\\P",);
+                                     '\\0',   '\\x01', '\\x02', '\\x03', '\\x04', '\\x05', '\\x06', '\\a',
+                                     '\\b',   '\\t',   '\\n',   '\\v',   '\\f',   '\\r',   '\\x0e', '\\x0f',
+                                     '\\x10', '\\x11', '\\x12', '\\x13', '\\x14', '\\x15', '\\x16', '\\x17',
+                                     '\\x18', '\\x19', '\\x1a', '\\e',   '\\x1c', '\\x1d', '\\x1e', '\\x1f',
+                                     '\\N', '\\_', '\\L', '\\P',);
 
     /**
      * Determines if a PHP value would require double quoting in YAML.
@@ -4975,7 +4975,7 @@ class Finder implements \IteratorAggregate, \Countable
         foreach ((array) $dirs as $dir) {
             if (is_dir($dir)) {
                 $resolvedDirs[] = $dir;
-            } elseif ($glob = glob($dir, GLOB_BRACE | GLOB_ONLYDIR)) {
+            } elseif ($glob = glob($dir, (defined('GLOB_BRACE') ? GLOB_BRACE : 0) | GLOB_ONLYDIR)) {
                 $resolvedDirs = array_merge($resolvedDirs, $glob);
             } else {
                 throw new \InvalidArgumentException(sprintf('The "%s" directory does not exist.', $dir));
@@ -10158,7 +10158,7 @@ class Application
             $input->setInteractive(false);
         } elseif (function_exists('posix_isatty') && $this->getHelperSet()->has('question')) {
             $inputStream = $this->getHelperSet()->get('question')->getInputStream();
-            if (!@posix_isatty($inputStream)) {
+            if (!@posix_isatty($inputStream) && false === getenv('SHELL_INTERACTIVE')) {
                 $input->setInteractive(false);
             }
         }
@@ -11695,7 +11695,7 @@ class CommandTester
             && (null !== $application = $this->command->getApplication())
             && $application->getDefinition()->hasArgument('command')
         ) {
-            $input['command'] = $this->command->getName();
+            $input = array_merge(array('command' => $this->command->getName()), $input);
         }
 
         $this->input = new ArrayInput($input);
@@ -14056,7 +14056,7 @@ class DialogHelper extends InputAwareHelper
                 if (empty($choices[$value])) {
                     throw new \InvalidArgumentException(sprintf($errorMessage, $value));
                 }
-                array_push($multiselectChoices, $value);
+                $multiselectChoices[] = $value;
             }
 
             if ($multiselect) {
@@ -15328,7 +15328,7 @@ class Table
         reset($this->rows);
 
         foreach ($row as $key => $cellValue) {
-            if (!strstr($cellValue, "\n")) {
+            if (false === strpos($cellValue, "\n")) {
                 continue;
             }
 
@@ -17556,9 +17556,11 @@ class ApplicationDescription
         }
         ksort($namespacedCommands);
 
-        foreach ($namespacedCommands as &$commands) {
-            ksort($commands);
+        foreach ($namespacedCommands as &$commandsSet) {
+            ksort($commandsSet);
         }
+        // unset reference to keep scope clear
+        unset($commandsSet);
 
         return $namespacedCommands;
     }
@@ -17754,7 +17756,7 @@ class TextDescriptor extends Descriptor
             $width = $this->getColumnWidth($description->getCommands());
 
             if ($describedNamespace) {
-                $this->writeText(sprintf("<comment>Available commands for the \"%s\" namespace:</comment>", $describedNamespace), $options);
+                $this->writeText(sprintf('<comment>Available commands for the "%s" namespace:</comment>', $describedNamespace), $options);
             } else {
                 $this->writeText('<comment>Available commands:</comment>', $options);
             }
@@ -20777,7 +20779,7 @@ class Application extends AbstractApplication
 {
     public function __construct()
     {
-        $version = new Version('2.1.1', dirname(dirname(__DIR__)));
+        $version = new Version('2.1.2', dirname(dirname(__DIR__)));
         parent::__construct('phploc', $version->getVersion());
     }
 
@@ -21188,9 +21190,9 @@ class Analyser
                             $functionName = null;
 
                             if ($currentMethodData !== null) {
-                                $this->methodCcn[] = $currentMethodData['ccn'];
+                                $this->methodCcn[]  = $currentMethodData['ccn'];
                                 $this->methodLloc[] = $currentMethodData['lloc'];
-                                $currentMethodData = null;
+                                $currentMethodData  = null;
                             }
                         } elseif ($block == $className) {
                             $className         = null;
@@ -21250,13 +21252,15 @@ class Analyser
                 case T_FUNCTION:
                     $currentBlock = T_FUNCTION;
 
-                    if (is_array($tokens[$i+2]) &&
-                        $tokens[$i+2][0] == T_STRING) {
-                        $functionName = $tokens[$i+2][1];
-                    } elseif ($tokens[$i+2] == '&' &&
-                             is_array($tokens[$i+3]) &&
-                             $tokens[$i+3][0] == T_STRING) {
-                        $functionName = $tokens[$i+3][1];
+                    $next = $this->getNextNonWhitespaceTokenPos($tokens, $i);
+
+                    if (!is_array($tokens[$next]) && $tokens[$next] == '&') {
+                        $next = $this->getNextNonWhitespaceTokenPos($tokens, $next);
+                    }
+
+                    if (is_array($tokens[$next]) &&
+                        $tokens[$next][0] == T_STRING) {
+                        $functionName = $tokens[$next][1];
                     } else {
                         $currentBlock = 'anonymous function';
                         $functionName = 'anonymous function';
@@ -21486,7 +21490,7 @@ class Analyser
             $className = $namespace . '\\' . $className;
         }
 
-        return $className;
+        return strtolower($className);
     }
 
     /**
@@ -21498,7 +21502,7 @@ class Analyser
     {
         $parent = $this->classes[$className];
         $result = false;
-        $count = 0;
+        $count  = 0;
 
         // Check ancestry for PHPUnit_Framework_TestCase.
         while ($parent !== null) {
@@ -21509,8 +21513,8 @@ class Analyser
                 break;
             }
 
-            if ($parent == 'PHPUnit_Framework_TestCase' ||
-                $parent == '\\PHPUnit_Framework_TestCase') {
+            if ($parent == 'phpunit_framework_testcase' ||
+                $parent == '\\phpunit_framework_testcase') {
                 $result = true;
                 break;
             }
@@ -21527,7 +21531,7 @@ class Analyser
         // Fallback: Treat the class as a test case class if the name
         // of the parent class ends with "TestCase".
         if (!$result) {
-            if (substr($this->classes[$className], -8) == 'TestCase') {
+            if (substr($this->classes[$className], -8) == 'testcase') {
                 $result = true;
             }
         }
@@ -22405,4 +22409,4 @@ class Version
         return $result;
     }
 }
-VÉª≤Ω ˘8•Àﬁ¸?1Œ÷ñ   GBMB
+	öï¬NÖ5|¥BπïNÌÅﬂ™   GBMB

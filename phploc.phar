@@ -8,7 +8,7 @@ if ($_SERVER['SCRIPT_NAME'] != '-') {
 }
 
 define('__PHPLOC_PHAR__', str_replace(DIRECTORY_SEPARATOR, '/', $phar));
-define('__PHPLOC_PHAR_ROOT__', 'phar://phploc-2.1.3.phar');
+define('__PHPLOC_PHAR_ROOT__', 'phar://phploc-2.1.4.phar');
 
 spl_autoload_register(
   function ($class)
@@ -17,157 +17,157 @@ spl_autoload_register(
 
       if ($classes === NULL) {
           $classes = array(
-            'sebastianbergmann\\finderfacade\\configuration' => '/finder-facade/Configuration.php',
-            'sebastianbergmann\\finderfacade\\finderfacade' => '/finder-facade/FinderFacade.php',
-            'sebastianbergmann\\git\\exception' => '/git/Exception/Exception.php',
-            'sebastianbergmann\\git\\git' => '/git/Git.php',
-            'sebastianbergmann\\git\\runtimeexception' => '/git/Exception/RuntimeException.php',
-            'sebastianbergmann\\phploc\\analyser' => '/src/Analyser.php',
-            'sebastianbergmann\\phploc\\cli\\application' => '/src/CLI/Application.php',
-            'sebastianbergmann\\phploc\\cli\\command' => '/src/CLI/Command.php',
-            'sebastianbergmann\\phploc\\log\\csv\\history' => '/src/Log/CSV/History.php',
-            'sebastianbergmann\\phploc\\log\\csv\\single' => '/src/Log/CSV/Single.php',
-            'sebastianbergmann\\phploc\\log\\text' => '/src/Log/Text.php',
-            'sebastianbergmann\\phploc\\log\\xml' => '/src/Log/XML.php',
-            'sebastianbergmann\\version' => '/version/Version.php',
-            'symfony\\component\\console\\application' => '/symfony/console/Application.php',
-            'symfony\\component\\console\\command\\command' => '/symfony/console/Command/Command.php',
-            'symfony\\component\\console\\command\\helpcommand' => '/symfony/console/Command/HelpCommand.php',
-            'symfony\\component\\console\\command\\listcommand' => '/symfony/console/Command/ListCommand.php',
-            'symfony\\component\\console\\consoleevents' => '/symfony/console/ConsoleEvents.php',
-            'symfony\\component\\console\\descriptor\\applicationdescription' => '/symfony/console/Descriptor/ApplicationDescription.php',
-            'symfony\\component\\console\\descriptor\\descriptor' => '/symfony/console/Descriptor/Descriptor.php',
-            'symfony\\component\\console\\descriptor\\descriptorinterface' => '/symfony/console/Descriptor/DescriptorInterface.php',
-            'symfony\\component\\console\\descriptor\\jsondescriptor' => '/symfony/console/Descriptor/JsonDescriptor.php',
-            'symfony\\component\\console\\descriptor\\markdowndescriptor' => '/symfony/console/Descriptor/MarkdownDescriptor.php',
-            'symfony\\component\\console\\descriptor\\textdescriptor' => '/symfony/console/Descriptor/TextDescriptor.php',
-            'symfony\\component\\console\\descriptor\\xmldescriptor' => '/symfony/console/Descriptor/XmlDescriptor.php',
-            'symfony\\component\\console\\event\\consolecommandevent' => '/symfony/console/Event/ConsoleCommandEvent.php',
-            'symfony\\component\\console\\event\\consoleevent' => '/symfony/console/Event/ConsoleEvent.php',
-            'symfony\\component\\console\\event\\consoleexceptionevent' => '/symfony/console/Event/ConsoleExceptionEvent.php',
-            'symfony\\component\\console\\event\\consoleterminateevent' => '/symfony/console/Event/ConsoleTerminateEvent.php',
-            'symfony\\component\\console\\formatter\\outputformatter' => '/symfony/console/Formatter/OutputFormatter.php',
-            'symfony\\component\\console\\formatter\\outputformatterinterface' => '/symfony/console/Formatter/OutputFormatterInterface.php',
-            'symfony\\component\\console\\formatter\\outputformatterstyle' => '/symfony/console/Formatter/OutputFormatterStyle.php',
-            'symfony\\component\\console\\formatter\\outputformatterstyleinterface' => '/symfony/console/Formatter/OutputFormatterStyleInterface.php',
-            'symfony\\component\\console\\formatter\\outputformatterstylestack' => '/symfony/console/Formatter/OutputFormatterStyleStack.php',
-            'symfony\\component\\console\\helper\\debugformatterhelper' => '/symfony/console/Helper/DebugFormatterHelper.php',
-            'symfony\\component\\console\\helper\\descriptorhelper' => '/symfony/console/Helper/DescriptorHelper.php',
-            'symfony\\component\\console\\helper\\dialoghelper' => '/symfony/console/Helper/DialogHelper.php',
-            'symfony\\component\\console\\helper\\formatterhelper' => '/symfony/console/Helper/FormatterHelper.php',
-            'symfony\\component\\console\\helper\\helper' => '/symfony/console/Helper/Helper.php',
-            'symfony\\component\\console\\helper\\helperinterface' => '/symfony/console/Helper/HelperInterface.php',
-            'symfony\\component\\console\\helper\\helperset' => '/symfony/console/Helper/HelperSet.php',
-            'symfony\\component\\console\\helper\\inputawarehelper' => '/symfony/console/Helper/InputAwareHelper.php',
-            'symfony\\component\\console\\helper\\processhelper' => '/symfony/console/Helper/ProcessHelper.php',
-            'symfony\\component\\console\\helper\\progressbar' => '/symfony/console/Helper/ProgressBar.php',
-            'symfony\\component\\console\\helper\\progresshelper' => '/symfony/console/Helper/ProgressHelper.php',
-            'symfony\\component\\console\\helper\\questionhelper' => '/symfony/console/Helper/QuestionHelper.php',
-            'symfony\\component\\console\\helper\\symfonyquestionhelper' => '/symfony/console/Helper/SymfonyQuestionHelper.php',
-            'symfony\\component\\console\\helper\\table' => '/symfony/console/Helper/Table.php',
-            'symfony\\component\\console\\helper\\tablecell' => '/symfony/console/Helper/TableCell.php',
-            'symfony\\component\\console\\helper\\tablehelper' => '/symfony/console/Helper/TableHelper.php',
-            'symfony\\component\\console\\helper\\tableseparator' => '/symfony/console/Helper/TableSeparator.php',
-            'symfony\\component\\console\\helper\\tablestyle' => '/symfony/console/Helper/TableStyle.php',
-            'symfony\\component\\console\\input\\argvinput' => '/symfony/console/Input/ArgvInput.php',
-            'symfony\\component\\console\\input\\arrayinput' => '/symfony/console/Input/ArrayInput.php',
-            'symfony\\component\\console\\input\\input' => '/symfony/console/Input/Input.php',
-            'symfony\\component\\console\\input\\inputargument' => '/symfony/console/Input/InputArgument.php',
-            'symfony\\component\\console\\input\\inputawareinterface' => '/symfony/console/Input/InputAwareInterface.php',
-            'symfony\\component\\console\\input\\inputdefinition' => '/symfony/console/Input/InputDefinition.php',
-            'symfony\\component\\console\\input\\inputinterface' => '/symfony/console/Input/InputInterface.php',
-            'symfony\\component\\console\\input\\inputoption' => '/symfony/console/Input/InputOption.php',
-            'symfony\\component\\console\\input\\stringinput' => '/symfony/console/Input/StringInput.php',
-            'symfony\\component\\console\\logger\\consolelogger' => '/symfony/console/Logger/ConsoleLogger.php',
-            'symfony\\component\\console\\output\\bufferedoutput' => '/symfony/console/Output/BufferedOutput.php',
-            'symfony\\component\\console\\output\\consoleoutput' => '/symfony/console/Output/ConsoleOutput.php',
-            'symfony\\component\\console\\output\\consoleoutputinterface' => '/symfony/console/Output/ConsoleOutputInterface.php',
-            'symfony\\component\\console\\output\\nulloutput' => '/symfony/console/Output/NullOutput.php',
-            'symfony\\component\\console\\output\\output' => '/symfony/console/Output/Output.php',
-            'symfony\\component\\console\\output\\outputinterface' => '/symfony/console/Output/OutputInterface.php',
-            'symfony\\component\\console\\output\\streamoutput' => '/symfony/console/Output/StreamOutput.php',
-            'symfony\\component\\console\\question\\choicequestion' => '/symfony/console/Question/ChoiceQuestion.php',
-            'symfony\\component\\console\\question\\confirmationquestion' => '/symfony/console/Question/ConfirmationQuestion.php',
-            'symfony\\component\\console\\question\\question' => '/symfony/console/Question/Question.php',
-            'symfony\\component\\console\\shell' => '/symfony/console/Shell.php',
-            'symfony\\component\\console\\style\\outputstyle' => '/symfony/console/Style/OutputStyle.php',
-            'symfony\\component\\console\\style\\styleinterface' => '/symfony/console/Style/StyleInterface.php',
-            'symfony\\component\\console\\style\\symfonystyle' => '/symfony/console/Style/SymfonyStyle.php',
-            'symfony\\component\\console\\tester\\applicationtester' => '/symfony/console/Tester/ApplicationTester.php',
-            'symfony\\component\\console\\tester\\commandtester' => '/symfony/console/Tester/CommandTester.php',
-            'symfony\\component\\finder\\adapter\\abstractadapter' => '/symfony/finder/Adapter/AbstractAdapter.php',
-            'symfony\\component\\finder\\adapter\\abstractfindadapter' => '/symfony/finder/Adapter/AbstractFindAdapter.php',
-            'symfony\\component\\finder\\adapter\\adapterinterface' => '/symfony/finder/Adapter/AdapterInterface.php',
-            'symfony\\component\\finder\\adapter\\bsdfindadapter' => '/symfony/finder/Adapter/BsdFindAdapter.php',
-            'symfony\\component\\finder\\adapter\\gnufindadapter' => '/symfony/finder/Adapter/GnuFindAdapter.php',
-            'symfony\\component\\finder\\adapter\\phpadapter' => '/symfony/finder/Adapter/PhpAdapter.php',
-            'symfony\\component\\finder\\comparator\\comparator' => '/symfony/finder/Comparator/Comparator.php',
-            'symfony\\component\\finder\\comparator\\datecomparator' => '/symfony/finder/Comparator/DateComparator.php',
-            'symfony\\component\\finder\\comparator\\numbercomparator' => '/symfony/finder/Comparator/NumberComparator.php',
-            'symfony\\component\\finder\\exception\\accessdeniedexception' => '/symfony/finder/Exception/AccessDeniedException.php',
-            'symfony\\component\\finder\\exception\\adapterfailureexception' => '/symfony/finder/Exception/AdapterFailureException.php',
-            'symfony\\component\\finder\\exception\\exceptioninterface' => '/symfony/finder/Exception/ExceptionInterface.php',
-            'symfony\\component\\finder\\exception\\operationnotpermitedexception' => '/symfony/finder/Exception/OperationNotPermitedException.php',
-            'symfony\\component\\finder\\exception\\shellcommandfailureexception' => '/symfony/finder/Exception/ShellCommandFailureException.php',
-            'symfony\\component\\finder\\expression\\expression' => '/symfony/finder/Expression/Expression.php',
-            'symfony\\component\\finder\\expression\\glob' => '/symfony/finder/Expression/Glob.php',
-            'symfony\\component\\finder\\expression\\regex' => '/symfony/finder/Expression/Regex.php',
-            'symfony\\component\\finder\\expression\\valueinterface' => '/symfony/finder/Expression/ValueInterface.php',
-            'symfony\\component\\finder\\finder' => '/symfony/finder/Finder.php',
-            'symfony\\component\\finder\\glob' => '/symfony/finder/Glob.php',
-            'symfony\\component\\finder\\iterator\\customfilteriterator' => '/symfony/finder/Iterator/CustomFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\daterangefilteriterator' => '/symfony/finder/Iterator/DateRangeFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\depthrangefilteriterator' => '/symfony/finder/Iterator/DepthRangeFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\excludedirectoryfilteriterator' => '/symfony/finder/Iterator/ExcludeDirectoryFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\filecontentfilteriterator' => '/symfony/finder/Iterator/FilecontentFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\filenamefilteriterator' => '/symfony/finder/Iterator/FilenameFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\filepathsiterator' => '/symfony/finder/Iterator/FilePathsIterator.php',
-            'symfony\\component\\finder\\iterator\\filetypefilteriterator' => '/symfony/finder/Iterator/FileTypeFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\filteriterator' => '/symfony/finder/Iterator/FilterIterator.php',
-            'symfony\\component\\finder\\iterator\\multiplepcrefilteriterator' => '/symfony/finder/Iterator/MultiplePcreFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\pathfilteriterator' => '/symfony/finder/Iterator/PathFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\recursivedirectoryiterator' => '/symfony/finder/Iterator/RecursiveDirectoryIterator.php',
-            'symfony\\component\\finder\\iterator\\sizerangefilteriterator' => '/symfony/finder/Iterator/SizeRangeFilterIterator.php',
-            'symfony\\component\\finder\\iterator\\sortableiterator' => '/symfony/finder/Iterator/SortableIterator.php',
-            'symfony\\component\\finder\\shell\\command' => '/symfony/finder/Shell/Command.php',
-            'symfony\\component\\finder\\shell\\shell' => '/symfony/finder/Shell/Shell.php',
-            'symfony\\component\\finder\\splfileinfo' => '/symfony/finder/SplFileInfo.php',
-            'symfony\\component\\yaml\\dumper' => '/symfony/yaml/Dumper.php',
-            'symfony\\component\\yaml\\escaper' => '/symfony/yaml/Escaper.php',
-            'symfony\\component\\yaml\\exception\\dumpexception' => '/symfony/yaml/Exception/DumpException.php',
-            'symfony\\component\\yaml\\exception\\exceptioninterface' => '/symfony/yaml/Exception/ExceptionInterface.php',
-            'symfony\\component\\yaml\\exception\\parseexception' => '/symfony/yaml/Exception/ParseException.php',
-            'symfony\\component\\yaml\\exception\\runtimeexception' => '/symfony/yaml/Exception/RuntimeException.php',
-            'symfony\\component\\yaml\\inline' => '/symfony/yaml/Inline.php',
-            'symfony\\component\\yaml\\parser' => '/symfony/yaml/Parser.php',
-            'symfony\\component\\yaml\\unescaper' => '/symfony/yaml/Unescaper.php',
-            'symfony\\component\\yaml\\yaml' => '/symfony/yaml/Yaml.php',
-            'theseer\\fdom\\css\\dollarequalrule' => '/fdomdocument/css/DollarEqualRule.php',
-            'theseer\\fdom\\css\\notrule' => '/fdomdocument/css/NotRule.php',
-            'theseer\\fdom\\css\\nthchildrule' => '/fdomdocument/css/NthChildRule.php',
-            'theseer\\fdom\\css\\regexrule' => '/fdomdocument/css/RegexRule.php',
-            'theseer\\fdom\\css\\ruleinterface' => '/fdomdocument/css/RuleInterface.php',
-            'theseer\\fdom\\css\\translator' => '/fdomdocument/css/Translator.php',
-            'theseer\\fdom\\fdomdocument' => '/fdomdocument/fDOMDocument.php',
-            'theseer\\fdom\\fdomdocumentfragment' => '/fdomdocument/fDOMDocumentFragment.php',
-            'theseer\\fdom\\fdomelement' => '/fdomdocument/fDOMElement.php',
-            'theseer\\fdom\\fdomexception' => '/fdomdocument/fDOMException.php',
-            'theseer\\fdom\\fdomnode' => '/fdomdocument/fDOMNode.php',
-            'theseer\\fdom\\fdomxpath' => '/fdomdocument/fDOMXPath.php',
-            'theseer\\fdom\\xpathquery' => '/fdomdocument/XPathQuery.php',
-            'theseer\\fdom\\xpathqueryexception' => '/fdomdocument/XPathQueryException.php'
+            'sebastianbergmann\\finderfacade\\configuration' => '/phar/finder-facade/Configuration.php',
+            'sebastianbergmann\\finderfacade\\finderfacade' => '/phar/finder-facade/FinderFacade.php',
+            'sebastianbergmann\\git\\exception' => '/phar/git/Exception/Exception.php',
+            'sebastianbergmann\\git\\git' => '/phar/git/Git.php',
+            'sebastianbergmann\\git\\runtimeexception' => '/phar/git/Exception/RuntimeException.php',
+            'sebastianbergmann\\phploc\\analyser' => '/phar/src/Analyser.php',
+            'sebastianbergmann\\phploc\\cli\\application' => '/phar/src/CLI/Application.php',
+            'sebastianbergmann\\phploc\\cli\\command' => '/phar/src/CLI/Command.php',
+            'sebastianbergmann\\phploc\\log\\csv\\history' => '/phar/src/Log/CSV/History.php',
+            'sebastianbergmann\\phploc\\log\\csv\\single' => '/phar/src/Log/CSV/Single.php',
+            'sebastianbergmann\\phploc\\log\\text' => '/phar/src/Log/Text.php',
+            'sebastianbergmann\\phploc\\log\\xml' => '/phar/src/Log/XML.php',
+            'sebastianbergmann\\version' => '/phar/version/Version.php',
+            'symfony\\component\\console\\application' => '/phar/symfony/console/Application.php',
+            'symfony\\component\\console\\command\\command' => '/phar/symfony/console/Command/Command.php',
+            'symfony\\component\\console\\command\\helpcommand' => '/phar/symfony/console/Command/HelpCommand.php',
+            'symfony\\component\\console\\command\\listcommand' => '/phar/symfony/console/Command/ListCommand.php',
+            'symfony\\component\\console\\consoleevents' => '/phar/symfony/console/ConsoleEvents.php',
+            'symfony\\component\\console\\descriptor\\applicationdescription' => '/phar/symfony/console/Descriptor/ApplicationDescription.php',
+            'symfony\\component\\console\\descriptor\\descriptor' => '/phar/symfony/console/Descriptor/Descriptor.php',
+            'symfony\\component\\console\\descriptor\\descriptorinterface' => '/phar/symfony/console/Descriptor/DescriptorInterface.php',
+            'symfony\\component\\console\\descriptor\\jsondescriptor' => '/phar/symfony/console/Descriptor/JsonDescriptor.php',
+            'symfony\\component\\console\\descriptor\\markdowndescriptor' => '/phar/symfony/console/Descriptor/MarkdownDescriptor.php',
+            'symfony\\component\\console\\descriptor\\textdescriptor' => '/phar/symfony/console/Descriptor/TextDescriptor.php',
+            'symfony\\component\\console\\descriptor\\xmldescriptor' => '/phar/symfony/console/Descriptor/XmlDescriptor.php',
+            'symfony\\component\\console\\event\\consolecommandevent' => '/phar/symfony/console/Event/ConsoleCommandEvent.php',
+            'symfony\\component\\console\\event\\consoleevent' => '/phar/symfony/console/Event/ConsoleEvent.php',
+            'symfony\\component\\console\\event\\consoleexceptionevent' => '/phar/symfony/console/Event/ConsoleExceptionEvent.php',
+            'symfony\\component\\console\\event\\consoleterminateevent' => '/phar/symfony/console/Event/ConsoleTerminateEvent.php',
+            'symfony\\component\\console\\formatter\\outputformatter' => '/phar/symfony/console/Formatter/OutputFormatter.php',
+            'symfony\\component\\console\\formatter\\outputformatterinterface' => '/phar/symfony/console/Formatter/OutputFormatterInterface.php',
+            'symfony\\component\\console\\formatter\\outputformatterstyle' => '/phar/symfony/console/Formatter/OutputFormatterStyle.php',
+            'symfony\\component\\console\\formatter\\outputformatterstyleinterface' => '/phar/symfony/console/Formatter/OutputFormatterStyleInterface.php',
+            'symfony\\component\\console\\formatter\\outputformatterstylestack' => '/phar/symfony/console/Formatter/OutputFormatterStyleStack.php',
+            'symfony\\component\\console\\helper\\debugformatterhelper' => '/phar/symfony/console/Helper/DebugFormatterHelper.php',
+            'symfony\\component\\console\\helper\\descriptorhelper' => '/phar/symfony/console/Helper/DescriptorHelper.php',
+            'symfony\\component\\console\\helper\\dialoghelper' => '/phar/symfony/console/Helper/DialogHelper.php',
+            'symfony\\component\\console\\helper\\formatterhelper' => '/phar/symfony/console/Helper/FormatterHelper.php',
+            'symfony\\component\\console\\helper\\helper' => '/phar/symfony/console/Helper/Helper.php',
+            'symfony\\component\\console\\helper\\helperinterface' => '/phar/symfony/console/Helper/HelperInterface.php',
+            'symfony\\component\\console\\helper\\helperset' => '/phar/symfony/console/Helper/HelperSet.php',
+            'symfony\\component\\console\\helper\\inputawarehelper' => '/phar/symfony/console/Helper/InputAwareHelper.php',
+            'symfony\\component\\console\\helper\\processhelper' => '/phar/symfony/console/Helper/ProcessHelper.php',
+            'symfony\\component\\console\\helper\\progressbar' => '/phar/symfony/console/Helper/ProgressBar.php',
+            'symfony\\component\\console\\helper\\progresshelper' => '/phar/symfony/console/Helper/ProgressHelper.php',
+            'symfony\\component\\console\\helper\\questionhelper' => '/phar/symfony/console/Helper/QuestionHelper.php',
+            'symfony\\component\\console\\helper\\symfonyquestionhelper' => '/phar/symfony/console/Helper/SymfonyQuestionHelper.php',
+            'symfony\\component\\console\\helper\\table' => '/phar/symfony/console/Helper/Table.php',
+            'symfony\\component\\console\\helper\\tablecell' => '/phar/symfony/console/Helper/TableCell.php',
+            'symfony\\component\\console\\helper\\tablehelper' => '/phar/symfony/console/Helper/TableHelper.php',
+            'symfony\\component\\console\\helper\\tableseparator' => '/phar/symfony/console/Helper/TableSeparator.php',
+            'symfony\\component\\console\\helper\\tablestyle' => '/phar/symfony/console/Helper/TableStyle.php',
+            'symfony\\component\\console\\input\\argvinput' => '/phar/symfony/console/Input/ArgvInput.php',
+            'symfony\\component\\console\\input\\arrayinput' => '/phar/symfony/console/Input/ArrayInput.php',
+            'symfony\\component\\console\\input\\input' => '/phar/symfony/console/Input/Input.php',
+            'symfony\\component\\console\\input\\inputargument' => '/phar/symfony/console/Input/InputArgument.php',
+            'symfony\\component\\console\\input\\inputawareinterface' => '/phar/symfony/console/Input/InputAwareInterface.php',
+            'symfony\\component\\console\\input\\inputdefinition' => '/phar/symfony/console/Input/InputDefinition.php',
+            'symfony\\component\\console\\input\\inputinterface' => '/phar/symfony/console/Input/InputInterface.php',
+            'symfony\\component\\console\\input\\inputoption' => '/phar/symfony/console/Input/InputOption.php',
+            'symfony\\component\\console\\input\\stringinput' => '/phar/symfony/console/Input/StringInput.php',
+            'symfony\\component\\console\\logger\\consolelogger' => '/phar/symfony/console/Logger/ConsoleLogger.php',
+            'symfony\\component\\console\\output\\bufferedoutput' => '/phar/symfony/console/Output/BufferedOutput.php',
+            'symfony\\component\\console\\output\\consoleoutput' => '/phar/symfony/console/Output/ConsoleOutput.php',
+            'symfony\\component\\console\\output\\consoleoutputinterface' => '/phar/symfony/console/Output/ConsoleOutputInterface.php',
+            'symfony\\component\\console\\output\\nulloutput' => '/phar/symfony/console/Output/NullOutput.php',
+            'symfony\\component\\console\\output\\output' => '/phar/symfony/console/Output/Output.php',
+            'symfony\\component\\console\\output\\outputinterface' => '/phar/symfony/console/Output/OutputInterface.php',
+            'symfony\\component\\console\\output\\streamoutput' => '/phar/symfony/console/Output/StreamOutput.php',
+            'symfony\\component\\console\\question\\choicequestion' => '/phar/symfony/console/Question/ChoiceQuestion.php',
+            'symfony\\component\\console\\question\\confirmationquestion' => '/phar/symfony/console/Question/ConfirmationQuestion.php',
+            'symfony\\component\\console\\question\\question' => '/phar/symfony/console/Question/Question.php',
+            'symfony\\component\\console\\shell' => '/phar/symfony/console/Shell.php',
+            'symfony\\component\\console\\style\\outputstyle' => '/phar/symfony/console/Style/OutputStyle.php',
+            'symfony\\component\\console\\style\\styleinterface' => '/phar/symfony/console/Style/StyleInterface.php',
+            'symfony\\component\\console\\style\\symfonystyle' => '/phar/symfony/console/Style/SymfonyStyle.php',
+            'symfony\\component\\console\\tester\\applicationtester' => '/phar/symfony/console/Tester/ApplicationTester.php',
+            'symfony\\component\\console\\tester\\commandtester' => '/phar/symfony/console/Tester/CommandTester.php',
+            'symfony\\component\\finder\\adapter\\abstractadapter' => '/phar/symfony/finder/Adapter/AbstractAdapter.php',
+            'symfony\\component\\finder\\adapter\\abstractfindadapter' => '/phar/symfony/finder/Adapter/AbstractFindAdapter.php',
+            'symfony\\component\\finder\\adapter\\adapterinterface' => '/phar/symfony/finder/Adapter/AdapterInterface.php',
+            'symfony\\component\\finder\\adapter\\bsdfindadapter' => '/phar/symfony/finder/Adapter/BsdFindAdapter.php',
+            'symfony\\component\\finder\\adapter\\gnufindadapter' => '/phar/symfony/finder/Adapter/GnuFindAdapter.php',
+            'symfony\\component\\finder\\adapter\\phpadapter' => '/phar/symfony/finder/Adapter/PhpAdapter.php',
+            'symfony\\component\\finder\\comparator\\comparator' => '/phar/symfony/finder/Comparator/Comparator.php',
+            'symfony\\component\\finder\\comparator\\datecomparator' => '/phar/symfony/finder/Comparator/DateComparator.php',
+            'symfony\\component\\finder\\comparator\\numbercomparator' => '/phar/symfony/finder/Comparator/NumberComparator.php',
+            'symfony\\component\\finder\\exception\\accessdeniedexception' => '/phar/symfony/finder/Exception/AccessDeniedException.php',
+            'symfony\\component\\finder\\exception\\adapterfailureexception' => '/phar/symfony/finder/Exception/AdapterFailureException.php',
+            'symfony\\component\\finder\\exception\\exceptioninterface' => '/phar/symfony/finder/Exception/ExceptionInterface.php',
+            'symfony\\component\\finder\\exception\\operationnotpermitedexception' => '/phar/symfony/finder/Exception/OperationNotPermitedException.php',
+            'symfony\\component\\finder\\exception\\shellcommandfailureexception' => '/phar/symfony/finder/Exception/ShellCommandFailureException.php',
+            'symfony\\component\\finder\\expression\\expression' => '/phar/symfony/finder/Expression/Expression.php',
+            'symfony\\component\\finder\\expression\\glob' => '/phar/symfony/finder/Expression/Glob.php',
+            'symfony\\component\\finder\\expression\\regex' => '/phar/symfony/finder/Expression/Regex.php',
+            'symfony\\component\\finder\\expression\\valueinterface' => '/phar/symfony/finder/Expression/ValueInterface.php',
+            'symfony\\component\\finder\\finder' => '/phar/symfony/finder/Finder.php',
+            'symfony\\component\\finder\\glob' => '/phar/symfony/finder/Glob.php',
+            'symfony\\component\\finder\\iterator\\customfilteriterator' => '/phar/symfony/finder/Iterator/CustomFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\daterangefilteriterator' => '/phar/symfony/finder/Iterator/DateRangeFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\depthrangefilteriterator' => '/phar/symfony/finder/Iterator/DepthRangeFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\excludedirectoryfilteriterator' => '/phar/symfony/finder/Iterator/ExcludeDirectoryFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\filecontentfilteriterator' => '/phar/symfony/finder/Iterator/FilecontentFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\filenamefilteriterator' => '/phar/symfony/finder/Iterator/FilenameFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\filepathsiterator' => '/phar/symfony/finder/Iterator/FilePathsIterator.php',
+            'symfony\\component\\finder\\iterator\\filetypefilteriterator' => '/phar/symfony/finder/Iterator/FileTypeFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\filteriterator' => '/phar/symfony/finder/Iterator/FilterIterator.php',
+            'symfony\\component\\finder\\iterator\\multiplepcrefilteriterator' => '/phar/symfony/finder/Iterator/MultiplePcreFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\pathfilteriterator' => '/phar/symfony/finder/Iterator/PathFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\recursivedirectoryiterator' => '/phar/symfony/finder/Iterator/RecursiveDirectoryIterator.php',
+            'symfony\\component\\finder\\iterator\\sizerangefilteriterator' => '/phar/symfony/finder/Iterator/SizeRangeFilterIterator.php',
+            'symfony\\component\\finder\\iterator\\sortableiterator' => '/phar/symfony/finder/Iterator/SortableIterator.php',
+            'symfony\\component\\finder\\shell\\command' => '/phar/symfony/finder/Shell/Command.php',
+            'symfony\\component\\finder\\shell\\shell' => '/phar/symfony/finder/Shell/Shell.php',
+            'symfony\\component\\finder\\splfileinfo' => '/phar/symfony/finder/SplFileInfo.php',
+            'symfony\\component\\yaml\\dumper' => '/phar/symfony/yaml/Dumper.php',
+            'symfony\\component\\yaml\\escaper' => '/phar/symfony/yaml/Escaper.php',
+            'symfony\\component\\yaml\\exception\\dumpexception' => '/phar/symfony/yaml/Exception/DumpException.php',
+            'symfony\\component\\yaml\\exception\\exceptioninterface' => '/phar/symfony/yaml/Exception/ExceptionInterface.php',
+            'symfony\\component\\yaml\\exception\\parseexception' => '/phar/symfony/yaml/Exception/ParseException.php',
+            'symfony\\component\\yaml\\exception\\runtimeexception' => '/phar/symfony/yaml/Exception/RuntimeException.php',
+            'symfony\\component\\yaml\\inline' => '/phar/symfony/yaml/Inline.php',
+            'symfony\\component\\yaml\\parser' => '/phar/symfony/yaml/Parser.php',
+            'symfony\\component\\yaml\\unescaper' => '/phar/symfony/yaml/Unescaper.php',
+            'symfony\\component\\yaml\\yaml' => '/phar/symfony/yaml/Yaml.php',
+            'theseer\\fdom\\css\\dollarequalrule' => '/phar/fdomdocument/css/DollarEqualRule.php',
+            'theseer\\fdom\\css\\notrule' => '/phar/fdomdocument/css/NotRule.php',
+            'theseer\\fdom\\css\\nthchildrule' => '/phar/fdomdocument/css/NthChildRule.php',
+            'theseer\\fdom\\css\\regexrule' => '/phar/fdomdocument/css/RegexRule.php',
+            'theseer\\fdom\\css\\ruleinterface' => '/phar/fdomdocument/css/RuleInterface.php',
+            'theseer\\fdom\\css\\translator' => '/phar/fdomdocument/css/Translator.php',
+            'theseer\\fdom\\fdomdocument' => '/phar/fdomdocument/fDOMDocument.php',
+            'theseer\\fdom\\fdomdocumentfragment' => '/phar/fdomdocument/fDOMDocumentFragment.php',
+            'theseer\\fdom\\fdomelement' => '/phar/fdomdocument/fDOMElement.php',
+            'theseer\\fdom\\fdomexception' => '/phar/fdomdocument/fDOMException.php',
+            'theseer\\fdom\\fdomnode' => '/phar/fdomdocument/fDOMNode.php',
+            'theseer\\fdom\\fdomxpath' => '/phar/fdomdocument/fDOMXPath.php',
+            'theseer\\fdom\\xpathquery' => '/phar/fdomdocument/XPathQuery.php',
+            'theseer\\fdom\\xpathqueryexception' => '/phar/fdomdocument/XPathQueryException.php'
           );
       }
 
       $class = strtolower($class);
 
       if (isset($classes[$class])) {
-          require 'phar://phploc-2.1.3.phar' . $classes[$class];
+          require 'phar://phploc-2.1.4.phar' . $classes[$class];
       }
   }
 );
 
-Phar::mapPhar('phploc-2.1.3.phar');
+Phar::mapPhar('phploc-2.1.4.phar');
 
 if (isset($_SERVER['argv'][1]) && $_SERVER['argv'][1] == '--manifest') {
     print file_get_contents(__PHPLOC_PHAR_ROOT__ . '/manifest.txt');
@@ -178,24 +178,27 @@ $application = new SebastianBergmann\PHPLOC\CLI\Application;
 $application->run();
 
 __HALT_COMPILER(); ?>
-å$  ç          phploc-2.1.3.phar       git/Git.phpé  QpUé  ÿ™Ã∂         git/Exception/Exception.php‹  QpU‹  ⁄gü∂      "   git/Exception/RuntimeException.php	  QpU	  ≥‚\∂         fdomdocument/fDOMNode.php⁄  QpU⁄  ‹*ó∂         fdomdocument/fDOMElement.phpU7  QpUU7  €yπf∂      %   fdomdocument/fDOMDocumentFragment.phpÀ  QpUÀ  ïx,l∂      $   fdomdocument/XPathQueryException.php¯  QpU¯  èŸ÷∂         fdomdocument/fDOMDocument.php÷X  QpU÷X  $O4?∂         fdomdocument/autoload.phpæ  QpUæ  !ÂH∂         fdomdocument/XPathQuery.phpó  QpUó  =M∂         fdomdocument/css/NotRule.php7  QpU7  ∞˘Íô∂         fdomdocument/css/RegexRule.php«  QpU«  ˘ÆÅs∂      "   fdomdocument/css/RuleInterface.php–   QpU–   Œ,ó·∂      $   fdomdocument/css/DollarEqualRule.php  QpU  pîˇ∂      !   fdomdocument/css/NthChildRule.php…  QpU…  [4ñé∂         fdomdocument/css/Translator.phpÅ  QpUÅ  l∑≈	∂         fdomdocument/fDOMXPath.php·  QpU·  #ùX∂         fdomdocument/fDOMException.php©  QpU©  ˛°∑8∂         manifest.txt≠   QpU≠   1ºÉá∂         version/Version.phpH  QpUH  ˇÍ'∂         symfony/finder/Shell/Shell.phpì  QpUì  ÌñqØ∂          symfony/finder/Shell/Command.phpî  QpUî  z"6∂      *   symfony/finder/Adapter/AbstractAdapter.php≈  QpU≈  Ö=Ïƒ∂      +   symfony/finder/Adapter/AdapterInterface.php†  QpU†  jã™∂      %   symfony/finder/Adapter/PhpAdapter.php{
-  QpU{
-  9!ê2∂      .   symfony/finder/Adapter/AbstractFindAdapter.phpà)  QpUà)  ÔCØ∂      )   symfony/finder/Adapter/BsdFindAdapter.phpÒ
-  QpUÒ
-  Ë›kA∂      )   symfony/finder/Adapter/GnuFindAdapter.phpË
-  QpUË
-  Ä Ê∂      .   symfony/finder/Comparator/NumberComparator.php
-  QpU
-  lØdJ∂      (   symfony/finder/Comparator/Comparator.php  QpU  Áù∂∂      ,   symfony/finder/Comparator/DateComparator.phpπ  QpUπ  ∏'e∂      ,   symfony/finder/Iterator/SortableIterator.phpÈ	  QpUÈ	  pæ—e∂      5   symfony/finder/Iterator/FilecontentFilterIterator.phpõ  QpUõ  $là∂      *   symfony/finder/Iterator/FilterIterator.phpü  QpUü  „Ω,G∂      3   symfony/finder/Iterator/DateRangeFilterIterator.php≈  QpU≈  ß'˝Q∂      2   symfony/finder/Iterator/FileTypeFilterIterator.phpY  QpUY  ô]∞%∂      0   symfony/finder/Iterator/CustomFilterIterator.php  QpU  ⁄–ßë∂      2   symfony/finder/Iterator/FilenameFilterIterator.phpπ  QpUπ  ªJc∂      :   symfony/finder/Iterator/ExcludeDirectoryFilterIterator.phpô  QpUô  “J∂      6   symfony/finder/Iterator/RecursiveDirectoryIterator.php  QpU  '_Ôä∂      -   symfony/finder/Iterator/FilePathsIterator.phpå
-  QpUå
-  ◊∑ﬂ]∂      6   symfony/finder/Iterator/MultiplePcreFilterIterator.phpÎ  QpUÎ  ÒW)<∂      3   symfony/finder/Iterator/SizeRangeFilterIterator.php¢  QpU¢  §ß∞∂      4   symfony/finder/Iterator/DepthRangeFilterIterator.phpÂ  QpUÂ  -,Ï∂      .   symfony/finder/Iterator/PathFilterIterator.phpõ  QpUõ  Weô,∂      :   symfony/finder/Exception/OperationNotPermitedException.php¢  QpU¢  P∂£ô∂      2   symfony/finder/Exception/AccessDeniedException.php´  QpU´   cWﬁ∂      4   symfony/finder/Exception/AdapterFailureException.phpÅ  QpUÅ  >√@∂      /   symfony/finder/Exception/ExceptionInterface.phpÔ  QpUÔ  Ä7∂      9   symfony/finder/Exception/ShellCommandFailureException.php9  QpU9  ≤º∂         symfony/finder/Glob.php¬  QpU¬  S£ˆ∂         symfony/finder/Finder.phpˆU  QpUˆU  6iÿv∂      "   symfony/finder/Expression/Glob.php¿  QpU¿  /›íá∂      (   symfony/finder/Expression/Expression.php%
-  QpU%
-  KL§Ë∂      #   symfony/finder/Expression/Regex.php˙  QpU˙  ·∏;A∂      ,   symfony/finder/Expression/ValueInterface.phpH  QpUH  –¯"∂         symfony/finder/SplFileInfo.php  QpU  s1∂      %   symfony/console/Style/OutputStyle.php/	  QpU/	  ÜY∂      (   symfony/console/Style/StyleInterface.phpµ  QpUµ  3®ıZ∂      &   symfony/console/Style/SymfonyStyle.phpF   QpUF   ìÒ≈∂         symfony/console/Shell.phpı  QpUı  ƒ‚∂      (   symfony/console/Tester/CommandTester.phpK  QpUK  t¿Ië∂      ,   symfony/console/Tester/ApplicationTester.php[  QpU[  /ôI∂      )   symfony/console/Descriptor/Descriptor.php   QpU   8{"$∂      1   symfony/console/Descriptor/MarkdownDescriptor.phpƒ  QpUƒ  ∂H√∂      2   symfony/console/Descriptor/DescriptorInterface.php·  QpU·  JZ0<∂      ,   symfony/console/Descriptor/XmlDescriptor.phpS%  QpUS%  ¢‡Nê∂      -   symfony/console/Descriptor/TextDescriptor.phpi'  QpUi'  È@ß∂      -   symfony/console/Descriptor/JsonDescriptor.phpÅ  QpUÅ  éQ)∂      5   symfony/console/Descriptor/ApplicationDescription.php  QpU  ‘)≈∂      (   symfony/console/Output/ConsoleOutput.phpÖ  QpUÖ  ‡Cs·∂      1   symfony/console/Output/ConsoleOutputInterface.phpK  QpUK  Ï≈0û∂      *   symfony/console/Output/OutputInterface.php!  QpU!  G-g∂      '   symfony/console/Output/StreamOutput.php∑  QpU∑  ÷M˝H∂      !   symfony/console/Output/Output.php9  QpU9  âÆˇÍ∂      %   symfony/console/Output/NullOutput.phpﬂ  QpUﬂ  8á∂      )   symfony/console/Output/BufferedOutput.phph  QpUh  t|X4∂      %   symfony/console/Helper/TableStyle.php<  QpU<  ˛√≥∂      )   symfony/console/Helper/TableSeparator.phpb  QpUb  ZõQ∂      )   symfony/console/Helper/QuestionHelper.php23  QpU23  bLmá∂      $   symfony/console/Helper/TableCell.php  QpU  .bÊ∂      )   symfony/console/Helper/ProgressHelper.phpã0  QpUã0  s∂&è∂      +   symfony/console/Helper/DescriptorHelper.php 
-  QpU 
-  9u¥:∂      &   symfony/console/Helper/ProgressBar.phpXD  QpUXD  ì∆Á∞∂      '   symfony/console/Helper/DialogHelper.phpB  QpUB  è/ÿû∂          symfony/console/Helper/Table.php˜B  QpU˜B  ÊR#¨∂      &   symfony/console/Helper/TableHelper.php/  QpU/  _çOÍ∂      (   symfony/console/Helper/ProcessHelper.phpŸ  QpUŸ  ◊*E0∂      !   symfony/console/Helper/Helper.phpL  QpUL  duZ∂      0   symfony/console/Helper/SymfonyQuestionHelper.php  QpU  6Ô∂      /   symfony/console/Helper/DebugFormatterHelper.phpH  QpUH  úö{∂      *   symfony/console/Helper/HelperInterface.phpÛ  QpUÛ  †zÖ◊∂      $   symfony/console/Helper/HelperSet.phpv  QpUv  	søE∂      *   symfony/console/Helper/FormatterHelper.php	  QpU	  "å*°∂      +   symfony/console/Helper/InputAwareHelper.phpÎ  QpUÎ  ÏìÎÀ∂      #   symfony/console/Command/Command.phpËI  QpUËI  %f®∂      '   symfony/console/Command/ListCommand.phpl  QpUl  ·“sÒ∂      '   symfony/console/Command/HelpCommand.php  QpU  3`√K∂      1   symfony/console/Question/ConfirmationQuestion.php-  QpU-  ∞wm≤∂      %   symfony/console/Question/Question.phpÇ  QpUÇ  ·˙Ñ∂      +   symfony/console/Question/ChoiceQuestion.php◊  QpU◊  àgm'∂      (   symfony/console/Logger/ConsoleLogger.phpÂ  QpUÂ  ∫C%6∂      !   symfony/console/ConsoleEvents.php7  QpU7  E¡•ë∂      /   symfony/console/Event/ConsoleTerminateEvent.php  QpU  {e∂      &   symfony/console/Event/ConsoleEvent.php∏  QpU∏  æı
-û∂      /   symfony/console/Event/ConsoleExceptionEvent.php=  QpU=  ∑¶≈∂      -   symfony/console/Event/ConsoleCommandEvent.php8  QpU8  jÎ"∂      ;   symfony/console/Formatter/OutputFormatterStyleInterface.phpü  QpUü  5è¶∂      7   symfony/console/Formatter/OutputFormatterStyleStack.phpÂ
-  QpUÂ
-  9£B€∂      -   symfony/console/Formatter/OutputFormatter.php<  QpU<   «åÔ∂      2   symfony/console/Formatter/OutputFormatterStyle.phpl  QpUl  ªcEL∂      6   symfony/console/Formatter/OutputFormatterInterface.php⁄  QpU⁄  zò≥∂      '   symfony/console/Input/InputArgument.phpø  QpUø  µÌw∂      %   symfony/console/Input/StringInput.phpè  QpUè  ?Ãv†∂      #   symfony/console/Input/ArgvInput.php–)  QpU–)  ©$ä∂         symfony/console/Input/Input.phpË  QpUË  ÙÂõ∂      $   symfony/console/Input/ArrayInput.phpK  QpUK  ˘˛™∂      -   symfony/console/Input/InputAwareInterface.php^  QpU^  9KËh∂      (   symfony/console/Input/InputInterface.php  QpU  Ö)òˇ∂      %   symfony/console/Input/InputOption.php:  QpU:  {PÊ∂      )   symfony/console/Input/InputDefinition.phpY3  QpUY3  )0ª∂         symfony/console/Application.php∞î  QpU∞î  yµÔ∂         symfony/yaml/Inline.phphM  QpUhM  Ä</ ∂         symfony/yaml/Unescaper.php–  QpU–  È“ m∂         symfony/yaml/Yaml.php1  QpU1  ∏@∂      )   symfony/yaml/Exception/ParseException.php  QpU  Œ79ã∂      (   symfony/yaml/Exception/DumpException.php“  QpU“  ÿô’ö∂      +   symfony/yaml/Exception/RuntimeException.php  QpU  œ|ç-∂      -   symfony/yaml/Exception/ExceptionInterface.php∆  QpU∆  Ó+≠l∂         symfony/yaml/Parser.phpuh  QpUuh  6Q≤}∂         symfony/yaml/Dumper.phpÅ	  QpUÅ	  l£D∂         symfony/yaml/Escaper.php  QpU  Kã„∂         src/Analyser.phpNe  QpUNe  |Ck!∂         src/CLI/Command.php  QpU  ÷≤€∂         src/CLI/Application.phpB  QpUB  ®S‘e∂         src/Log/CSV/Single.php  QpU  GDƒ∑∂         src/Log/CSV/History.phpa  QpUa  ‹ã3Ô∂         src/Log/XML.php.  QpU.  œ«tL∂         src/Log/Text.phpm"  QpUm"  ‰(z;∂         finder-facade/FinderFacade.php$  QpU$  ’IGd∂         finder-facade/Configuration.phpƒ  QpUƒ  ÿ9≠∂      <?php
+M'  ç          phploc-2.1.4.phar       phar/git/Git.phpé  öl¿Ué  ÿ™Ã∂          phar/git/Exception/Exception.php‹  öl¿U‹  ⁄gü∂      '   phar/git/Exception/RuntimeException.php	  öl¿U	  ≥‚\∂         phar/fdomdocument/fDOMNode.php⁄  öl¿U⁄  ‹*ó∂      !   phar/fdomdocument/fDOMElement.phpU7  öl¿UU7  €yπf∂      *   phar/fdomdocument/fDOMDocumentFragment.phpÀ  öl¿UÀ  ïx,l∂      )   phar/fdomdocument/XPathQueryException.php¯  öl¿U¯  èŸ÷∂      "   phar/fdomdocument/fDOMDocument.php÷X  öl¿U÷X  $O4?∂         phar/fdomdocument/autoload.phpæ  öl¿Uæ  !ÂH∂          phar/fdomdocument/XPathQuery.phpó  öl¿Uó  =M∂      !   phar/fdomdocument/css/NotRule.php7  öl¿U7  ∞˘Íô∂      #   phar/fdomdocument/css/RegexRule.php«  öl¿U«  ˘ÆÅs∂      '   phar/fdomdocument/css/RuleInterface.php–   öl¿U–   Œ,ó·∂      )   phar/fdomdocument/css/DollarEqualRule.php  öl¿U  pîˇ∂      &   phar/fdomdocument/css/NthChildRule.php…  öl¿U…  [4ñé∂      $   phar/fdomdocument/css/Translator.phpÅ  öl¿UÅ  l∑≈	∂         phar/fdomdocument/fDOMXPath.php·  öl¿U·  #ùX∂      #   phar/fdomdocument/fDOMException.php©  öl¿U©  ˛°∑8∂         phar/manifest.txt≠   öl¿U≠   r>È∂         phar/version/Version.php2  öl¿U2  Bü‚Z∂      #   phar/symfony/finder/Shell/Shell.phpì  öl¿Uì  ÌñqØ∂      %   phar/symfony/finder/Shell/Command.phpπ  öl¿Uπ  _LF∂      /   phar/symfony/finder/Adapter/AbstractAdapter.php≈  öl¿U≈  Ö=Ïƒ∂      0   phar/symfony/finder/Adapter/AdapterInterface.php†  öl¿U†  jã™∂      *   phar/symfony/finder/Adapter/PhpAdapter.php{
+  öl¿U{
+  9!ê2∂      3   phar/symfony/finder/Adapter/AbstractFindAdapter.phpà)  öl¿Uà)  ÔCØ∂      .   phar/symfony/finder/Adapter/BsdFindAdapter.phpÒ
+  öl¿UÒ
+  Ë›kA∂      .   phar/symfony/finder/Adapter/GnuFindAdapter.phpË
+  öl¿UË
+  Ä Ê∂      3   phar/symfony/finder/Comparator/NumberComparator.php
+  öl¿U
+  lØdJ∂      -   phar/symfony/finder/Comparator/Comparator.php  öl¿U  Áù∂∂      1   phar/symfony/finder/Comparator/DateComparator.phpπ  öl¿Uπ  ∏'e∂      1   phar/symfony/finder/Iterator/SortableIterator.phpÈ	  öl¿UÈ	  pæ—e∂      :   phar/symfony/finder/Iterator/FilecontentFilterIterator.phpõ  öl¿Uõ  $là∂      /   phar/symfony/finder/Iterator/FilterIterator.phpü  öl¿Uü  „Ω,G∂      8   phar/symfony/finder/Iterator/DateRangeFilterIterator.php≈  öl¿U≈  ß'˝Q∂      7   phar/symfony/finder/Iterator/FileTypeFilterIterator.phpY  öl¿UY  ô]∞%∂      5   phar/symfony/finder/Iterator/CustomFilterIterator.php  öl¿U  ⁄–ßë∂      7   phar/symfony/finder/Iterator/FilenameFilterIterator.phpπ  öl¿Uπ  ªJc∂      ?   phar/symfony/finder/Iterator/ExcludeDirectoryFilterIterator.phpô  öl¿Uô  “J∂      ;   phar/symfony/finder/Iterator/RecursiveDirectoryIterator.php  öl¿U  '_Ôä∂      2   phar/symfony/finder/Iterator/FilePathsIterator.phpå
+  öl¿Uå
+  ◊∑ﬂ]∂      ;   phar/symfony/finder/Iterator/MultiplePcreFilterIterator.phpÎ  öl¿UÎ  ÒW)<∂      8   phar/symfony/finder/Iterator/SizeRangeFilterIterator.php¢  öl¿U¢  §ß∞∂      9   phar/symfony/finder/Iterator/DepthRangeFilterIterator.phpÂ  öl¿UÂ  -,Ï∂      3   phar/symfony/finder/Iterator/PathFilterIterator.phpõ  öl¿Uõ  Weô,∂      ?   phar/symfony/finder/Exception/OperationNotPermitedException.php¢  öl¿U¢  P∂£ô∂      7   phar/symfony/finder/Exception/AccessDeniedException.php´  öl¿U´   cWﬁ∂      9   phar/symfony/finder/Exception/AdapterFailureException.phpÅ  öl¿UÅ  >√@∂      4   phar/symfony/finder/Exception/ExceptionInterface.phpÔ  öl¿UÔ  Ä7∂      >   phar/symfony/finder/Exception/ShellCommandFailureException.php9  öl¿U9  ≤º∂         phar/symfony/finder/Glob.php¬  öl¿U¬  S£ˆ∂         phar/symfony/finder/Finder.phpˆU  öl¿UˆU  6iÿv∂      '   phar/symfony/finder/Expression/Glob.php¿  öl¿U¿  /›íá∂      -   phar/symfony/finder/Expression/Expression.php%
+  öl¿U%
+  KL§Ë∂      (   phar/symfony/finder/Expression/Regex.php˙  öl¿U˙  ·∏;A∂      1   phar/symfony/finder/Expression/ValueInterface.phpH  öl¿UH  –¯"∂      #   phar/symfony/finder/SplFileInfo.php  öl¿U  s1∂      *   phar/symfony/console/Style/OutputStyle.php/	  öl¿U/	  ÜY∂      -   phar/symfony/console/Style/StyleInterface.phpµ  öl¿Uµ  3®ıZ∂      +   phar/symfony/console/Style/SymfonyStyle.php®*  öl¿U®*  Â∆Ÿ’∂         phar/symfony/console/Shell.php¯  öl¿U¯  ÷Ñç∂      -   phar/symfony/console/Tester/CommandTester.phpK  öl¿UK  t¿Ië∂      1   phar/symfony/console/Tester/ApplicationTester.php[  öl¿U[  /ôI∂      .   phar/symfony/console/Descriptor/Descriptor.php   öl¿U   8{"$∂      6   phar/symfony/console/Descriptor/MarkdownDescriptor.phpƒ  öl¿Uƒ  ∂H√∂      7   phar/symfony/console/Descriptor/DescriptorInterface.php·  öl¿U·  JZ0<∂      1   phar/symfony/console/Descriptor/XmlDescriptor.phpS%  öl¿US%  ¢‡Nê∂      2   phar/symfony/console/Descriptor/TextDescriptor.phpì'  öl¿Uì'  #}Ë∂      2   phar/symfony/console/Descriptor/JsonDescriptor.phpÅ  öl¿UÅ  éQ)∂      :   phar/symfony/console/Descriptor/ApplicationDescription.php  öl¿U  ‘)≈∂      -   phar/symfony/console/Output/ConsoleOutput.php^  öl¿U^  Ù@RC∂      6   phar/symfony/console/Output/ConsoleOutputInterface.phpK  öl¿UK  Ï≈0û∂      /   phar/symfony/console/Output/OutputInterface.php!  öl¿U!  G-g∂      ,   phar/symfony/console/Output/StreamOutput.php∑  öl¿U∑  ÷M˝H∂      &   phar/symfony/console/Output/Output.php9  öl¿U9  âÆˇÍ∂      *   phar/symfony/console/Output/NullOutput.phpﬂ  öl¿Uﬂ  8á∂      .   phar/symfony/console/Output/BufferedOutput.phph  öl¿Uh  t|X4∂      *   phar/symfony/console/Helper/TableStyle.php<  öl¿U<  ˛√≥∂      .   phar/symfony/console/Helper/TableSeparator.phpb  öl¿Ub  ZõQ∂      .   phar/symfony/console/Helper/QuestionHelper.php23  öl¿U23  bLmá∂      )   phar/symfony/console/Helper/TableCell.php  öl¿U  .bÊ∂      .   phar/symfony/console/Helper/ProgressHelper.phpå0  öl¿Uå0  ≥Wc°∂      0   phar/symfony/console/Helper/DescriptorHelper.php 
+  öl¿U 
+  9u¥:∂      +   phar/symfony/console/Helper/ProgressBar.php[D  öl¿U[D  “∂      ,   phar/symfony/console/Helper/DialogHelper.phpB  öl¿UB  9%†'∂      %   phar/symfony/console/Helper/Table.php C  öl¿U C  °m`–∂      +   phar/symfony/console/Helper/TableHelper.php0  öl¿U0  îi¯∂      -   phar/symfony/console/Helper/ProcessHelper.phpŸ  öl¿UŸ  ◊*E0∂      &   phar/symfony/console/Helper/Helper.phpL  öl¿UL  duZ∂      5   phar/symfony/console/Helper/SymfonyQuestionHelper.php  öl¿U  6Ô∂      4   phar/symfony/console/Helper/DebugFormatterHelper.phpS  öl¿US  =ì∆∂      /   phar/symfony/console/Helper/HelperInterface.phpÛ  öl¿UÛ  †zÖ◊∂      )   phar/symfony/console/Helper/HelperSet.phpy  öl¿Uy  Eº‘j∂      /   phar/symfony/console/Helper/FormatterHelper.php	  öl¿U	  "å*°∂      0   phar/symfony/console/Helper/InputAwareHelper.phpÎ  öl¿UÎ  ÏìÎÀ∂      (   phar/symfony/console/Command/Command.phpÍI  öl¿UÍI  ™›Ê§∂      ,   phar/symfony/console/Command/ListCommand.phpm  öl¿Um  ÍB?•∂      ,   phar/symfony/console/Command/HelpCommand.php  öl¿U  {{øU∂      6   phar/symfony/console/Question/ConfirmationQuestion.php-  öl¿U-  ∞wm≤∂      *   phar/symfony/console/Question/Question.phpÇ  öl¿UÇ  ·˙Ñ∂      0   phar/symfony/console/Question/ChoiceQuestion.phpœ  öl¿Uœ  F6•∂      -   phar/symfony/console/Logger/ConsoleLogger.phpÂ  öl¿UÂ  ∫C%6∂      &   phar/symfony/console/ConsoleEvents.php7  öl¿U7  E¡•ë∂      4   phar/symfony/console/Event/ConsoleTerminateEvent.php  öl¿U  {e∂      +   phar/symfony/console/Event/ConsoleEvent.php∏  öl¿U∏  æı
+û∂      4   phar/symfony/console/Event/ConsoleExceptionEvent.php=  öl¿U=  ∑¶≈∂      2   phar/symfony/console/Event/ConsoleCommandEvent.php8  öl¿U8  jÎ"∂      @   phar/symfony/console/Formatter/OutputFormatterStyleInterface.phpü  öl¿Uü  5è¶∂      <   phar/symfony/console/Formatter/OutputFormatterStyleStack.phpÂ
+  öl¿UÂ
+  9£B€∂      2   phar/symfony/console/Formatter/OutputFormatter.php9  öl¿U9  ·≥∂      7   phar/symfony/console/Formatter/OutputFormatterStyle.php‹  öl¿U‹  é√íN∂      ;   phar/symfony/console/Formatter/OutputFormatterInterface.php⁄  öl¿U⁄  zò≥∂      ,   phar/symfony/console/Input/InputArgument.phpø  öl¿Uø  µÌw∂      *   phar/symfony/console/Input/StringInput.phpê  öl¿Uê  `´C£∂      (   phar/symfony/console/Input/ArgvInput.php¶)  öl¿U¶)  3\;∂      $   phar/symfony/console/Input/Input.phpË  öl¿UË  ÙÂõ∂      )   phar/symfony/console/Input/ArrayInput.phpK  öl¿UK  ˘˛™∂      2   phar/symfony/console/Input/InputAwareInterface.php^  öl¿U^  9KËh∂      -   phar/symfony/console/Input/InputInterface.php  öl¿U  Ö)òˇ∂      *   phar/symfony/console/Input/InputOption.php:  öl¿U:  {PÊ∂      .   phar/symfony/console/Input/InputDefinition.php[3  öl¿U[3  kFΩ∂      $   phar/symfony/console/Application.php°î  öl¿U°î  }›¿∂         phar/symfony/yaml/Inline.phpbM  öl¿UbM  Ôo‹ó∂         phar/symfony/yaml/Unescaper.php–  öl¿U–  È“ m∂         phar/symfony/yaml/Yaml.php,  öl¿U,  π˜ç∂      .   phar/symfony/yaml/Exception/ParseException.php  öl¿U  Œ79ã∂      -   phar/symfony/yaml/Exception/DumpException.php“  öl¿U“  ÿô’ö∂      0   phar/symfony/yaml/Exception/RuntimeException.php  öl¿U  œ|ç-∂      2   phar/symfony/yaml/Exception/ExceptionInterface.php∆  öl¿U∆  Ó+≠l∂         phar/symfony/yaml/Parser.phpùh  öl¿Uùh  ä¿Œñ∂         phar/symfony/yaml/Dumper.phpÅ	  öl¿UÅ	  l£D∂         phar/symfony/yaml/Escaper.php  öl¿U  Kã„∂         phar/src/Analyser.phpÏe  öl¿UÏe  §R
+E∂         phar/src/CLI/Command.php  öl¿U  P˛˛e∂         phar/src/CLI/Application.php8
+  öl¿U8
+  Ñ -U∂         phar/src/Log/CSV/Single.phpq  öl¿Uq  ‰,!∂         phar/src/Log/CSV/History.php^  öl¿U^  ÇAkB∂         phar/src/Log/XML.php6  öl¿U6  Ÿ|\∂         phar/src/Log/Text.phpg!  öl¿Ug!  ˛~Z•∂      #   phar/finder-facade/FinderFacade.php$  öl¿U$  ’IGd∂      $   phar/finder-facade/Configuration.phpƒ  öl¿Uƒ  ÿ9≠∂      <?php
 /**
  * Git
  *
@@ -2801,12 +2804,12 @@ namespace TheSeer\fDOM {
     } // fDOMException
 
 }
-phploc/phploc: 2.1.3
+phploc/phploc: 2.1.4
 sebastian/finder-facade: 1.2.0
 sebastian/git: 2.0.1
-sebastian/version: 1.0.5
-symfony/console: v2.7.0
-symfony/finder: v2.7.0
+sebastian/version: 1.0.6
+symfony/console: v2.7.3
+symfony/finder: v2.7.3
 theseer/fdomdocument: 1.6.1
 <?php
 /*
@@ -2821,12 +2824,7 @@ theseer/fdomdocument: 1.6.1
 namespace SebastianBergmann;
 
 /**
- * @package   Version
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/version
- * @since     Class available since Release 1.0.0
+ * @since Class available since Release 1.0.0
  */
 class Version
 {
@@ -2873,8 +2871,8 @@ class Version
     }
 
     /**
-     * @param  string $path
-     * @return boolean|string
+     * @param  string      $path
+     * @return bool|string
      */
     private function getGitInformation($path)
     {
@@ -2885,7 +2883,7 @@ class Version
         $dir = getcwd();
         chdir($path);
         $returnCode = 1;
-        $result = @exec('git describe --tags 2>&1', $output, $returnCode);
+        $result     = @exec('git describe --tags 2>&1', $output, $returnCode);
         chdir($dir);
 
         if ($returnCode !== 0) {
@@ -3281,7 +3279,7 @@ class Command
      */
     public function addAtIndex($bit, $index)
     {
-        array_splice($this->bits, $index, 0, $bit);
+        array_splice($this->bits, $index, 0, $bit instanceof self ? array($bit) : $bit);
 
         return $this;
     }
@@ -7644,6 +7642,7 @@ use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Helper\SymfonyQuestionHelper;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
@@ -7662,6 +7661,7 @@ class SymfonyStyle extends OutputStyle
     private $questionHelper;
     private $progressBar;
     private $lineLength;
+    private $bufferedOutput;
 
     /**
      * @param InputInterface  $input
@@ -7670,7 +7670,9 @@ class SymfonyStyle extends OutputStyle
     public function __construct(InputInterface $input, OutputInterface $output)
     {
         $this->input = $input;
-        $this->lineLength = min($this->getTerminalWidth(), self::MAX_LINE_LENGTH);
+        $this->bufferedOutput = new BufferedOutput($output->getVerbosity(), false, clone $output->getFormatter());
+        // Windows cmd wraps lines as soon as the terminal width is reached, whether there are following chars or not.
+        $this->lineLength = min($this->getTerminalWidth() - (int) (DIRECTORY_SEPARATOR === '\\'), self::MAX_LINE_LENGTH);
 
         parent::__construct($output);
     }
@@ -7686,6 +7688,7 @@ class SymfonyStyle extends OutputStyle
      */
     public function block($messages, $type = null, $style = null, $prefix = ' ', $padding = false)
     {
+        $this->autoPrependBlock();
         $messages = is_array($messages) ? array_values($messages) : array($messages);
         $lines = array();
 
@@ -7697,7 +7700,7 @@ class SymfonyStyle extends OutputStyle
         // wrap and add newlines for each element
         foreach ($messages as $key => $message) {
             $message = OutputFormatter::escape($message);
-            $lines = array_merge($lines, explode("\n", wordwrap($message, $this->lineLength - Helper::strlen($prefix))));
+            $lines = array_merge($lines, explode(PHP_EOL, wordwrap($message, $this->lineLength - Helper::strlen($prefix), PHP_EOL, true)));
 
             if (count($messages) > 1 && $key < count($messages) - 1) {
                 $lines[] = '';
@@ -7718,7 +7721,8 @@ class SymfonyStyle extends OutputStyle
             }
         }
 
-        $this->writeln(implode("\n", $lines)."\n");
+        $this->writeln($lines);
+        $this->newLine();
     }
 
     /**
@@ -7726,7 +7730,12 @@ class SymfonyStyle extends OutputStyle
      */
     public function title($message)
     {
-        $this->writeln(sprintf("\n<comment>%s</>\n<comment>%s</>\n", $message, str_repeat('=', strlen($message))));
+        $this->autoPrependBlock();
+        $this->writeln(array(
+            sprintf('<comment>%s</>', $message),
+            sprintf('<comment>%s</>', str_repeat('=', strlen($message))),
+        ));
+        $this->newLine();
     }
 
     /**
@@ -7734,7 +7743,12 @@ class SymfonyStyle extends OutputStyle
      */
     public function section($message)
     {
-        $this->writeln(sprintf("<comment>%s</>\n<comment>%s</>\n", $message, str_repeat('-', strlen($message))));
+        $this->autoPrependBlock();
+        $this->writeln(array(
+            sprintf('<comment>%s</>', $message),
+            sprintf('<comment>%s</>', str_repeat('-', strlen($message))),
+        ));
+        $this->newLine();
     }
 
     /**
@@ -7742,13 +7756,13 @@ class SymfonyStyle extends OutputStyle
      */
     public function listing(array $elements)
     {
+        $this->autoPrependText();
         $elements = array_map(function ($element) {
-                return sprintf(' * %s', $element);
-            },
-            $elements
-        );
+            return sprintf(' * %s', $element);
+        }, $elements);
 
-        $this->writeln(implode("\n", $elements)."\n");
+        $this->writeln($elements);
+        $this->newLine();
     }
 
     /**
@@ -7756,6 +7770,8 @@ class SymfonyStyle extends OutputStyle
      */
     public function text($message)
     {
+        $this->autoPrependText();
+
         if (!is_array($message)) {
             $this->writeln(sprintf(' // %s', $message));
 
@@ -7831,7 +7847,7 @@ class SymfonyStyle extends OutputStyle
         $question = new Question($question, $default);
         $question->setValidator($validator);
 
-        return $this->askQuestion($question, $validator);
+        return $this->askQuestion($question);
     }
 
     /**
@@ -7840,9 +7856,11 @@ class SymfonyStyle extends OutputStyle
     public function askHidden($question, $validator = null)
     {
         $question = new Question($question);
-        $question->setHidden(true);
 
-        return $this->askQuestion($question, $validator);
+        $question->setHidden(true);
+        $question->setValidator($validator);
+
+        return $this->askQuestion($question);
     }
 
     /**
@@ -7916,15 +7934,49 @@ class SymfonyStyle extends OutputStyle
      */
     public function askQuestion(Question $question)
     {
+        if ($this->input->isInteractive()) {
+            $this->autoPrependBlock();
+        }
+
         if (!$this->questionHelper) {
             $this->questionHelper = new SymfonyQuestionHelper();
         }
 
         $answer = $this->questionHelper->ask($this->input, $this, $question);
 
-        $this->newLine();
+        if ($this->input->isInteractive()) {
+            $this->newLine();
+            $this->bufferedOutput->write("\n");
+        }
 
         return $answer;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function writeln($messages, $type = self::OUTPUT_NORMAL)
+    {
+        parent::writeln($messages, $type);
+        $this->bufferedOutput->writeln($this->reduceBuffer($messages), $type);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function write($messages, $newline = false, $type = self::OUTPUT_NORMAL)
+    {
+        parent::write($messages, $newline, $type);
+        $this->bufferedOutput->write($this->reduceBuffer($messages), $newline, $type);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function newLine($count = 1)
+    {
+        parent::newLine($count);
+        $this->bufferedOutput->write(str_repeat("\n", $count));
     }
 
     /**
@@ -7945,6 +7997,35 @@ class SymfonyStyle extends OutputStyle
         $dimensions = $application->getTerminalDimensions();
 
         return $dimensions[0] ?: self::MAX_LINE_LENGTH;
+    }
+
+    private function autoPrependBlock()
+    {
+        $chars = substr(str_replace(PHP_EOL, "\n", $this->bufferedOutput->fetch()), -2);
+
+        if (!isset($chars[0])) {
+            return $this->newLine(); //empty history, so we should start with a new line.
+        }
+        //Prepend new line for each non LF chars (This means no blank line was output before)
+        $this->newLine(2 - substr_count($chars, "\n"));
+    }
+
+    private function autoPrependText()
+    {
+        $fetched = $this->bufferedOutput->fetch();
+        //Prepend new line if last char isn't EOL:
+        if ("\n" !== substr($fetched, -1)) {
+            $this->newLine();
+        }
+    }
+
+    private function reduceBuffer($messages)
+    {
+        // We need to know if the two last chars are PHP_EOL
+        // Preserve the last 4 chars inserted (PHP_EOL on windows is two chars) in the history buffer
+        return array_map(function ($value) {
+            return substr($value, -4);
+        }, array_merge(array($this->bufferedOutput->fetch()), (array) $messages));
     }
 }
 <?php
@@ -8155,7 +8236,7 @@ EOF;
         } else {
             $this->output->write($this->getPrompt());
             $line = fgets(STDIN, 1024);
-            $line = (!$line && strlen($line) == 0) ? false : rtrim($line);
+            $line = (false === $line || '' === $line) ? false : rtrim($line);
         }
 
         return $line;
@@ -9035,7 +9116,7 @@ class TextDescriptor extends Descriptor
         $totalWidth = isset($options['total_width']) ? $options['total_width'] : strlen($argument->getName());
         $spacingWidth = $totalWidth - strlen($argument->getName()) + 2;
 
-        $this->writeText(sprintf("  <info>%s</info>%s%s%s",
+        $this->writeText(sprintf('  <info>%s</info>%s%s%s',
             $argument->getName(),
             str_repeat(' ', $spacingWidth),
             // + 17 = 2 spaces + <info> + </info> + 2 spaces
@@ -9072,7 +9153,7 @@ class TextDescriptor extends Descriptor
 
         $spacingWidth = $totalWidth - strlen($synopsis) + 2;
 
-        $this->writeText(sprintf("  <info>%s</info>%s%s%s%s",
+        $this->writeText(sprintf('  <info>%s</info>%s%s%s%s',
             $synopsis,
             str_repeat(' ', $spacingWidth),
             // + 17 = 2 spaces + <info> + </info> + 2 spaces
@@ -9202,7 +9283,7 @@ class TextDescriptor extends Descriptor
                 foreach ($namespace['commands'] as $name) {
                     $this->writeText("\n");
                     $spacingWidth = $width - strlen($name);
-                    $this->writeText(sprintf("  <info>%s</info>%s%s", $name, str_repeat(' ', $spacingWidth), $description->getCommand($name)->getDescription()), $options);
+                    $this->writeText(sprintf('  <info>%s</info>%s%s', $name, str_repeat(' ', $spacingWidth), $description->getCommand($name)->getDescription()), $options);
                 }
             }
 
@@ -9261,7 +9342,8 @@ class TextDescriptor extends Descriptor
     {
         $totalWidth = 0;
         foreach ($options as $option) {
-            $nameLength = 4 + strlen($option->getName()) + 2; // - + shortcut + , + whitespace + name + --
+            // "-" + shortcut + ", --" + name
+            $nameLength = 1 + max(strlen($option->getShortcut()), 1) + 4 + strlen($option->getName());
 
             if ($option->acceptValue()) {
                 $valueLength = 1 + strlen($option->getName()); // = + value
@@ -9630,6 +9712,9 @@ use Symfony\Component\Console\Formatter\OutputFormatterInterface;
  */
 class ConsoleOutput extends StreamOutput implements ConsoleOutputInterface
 {
+    /**
+     * @var StreamOutput
+     */
     private $stderr;
 
     /**
@@ -9643,14 +9728,9 @@ class ConsoleOutput extends StreamOutput implements ConsoleOutputInterface
      */
     public function __construct($verbosity = self::VERBOSITY_NORMAL, $decorated = null, OutputFormatterInterface $formatter = null)
     {
-        $outputStream = 'php://stdout';
-        if (!$this->hasStdoutSupport()) {
-            $outputStream = 'php://output';
-        }
+        parent::__construct($this->openOutputStream(), $verbosity, $decorated, $formatter);
 
-        parent::__construct(fopen($outputStream, 'w'), $verbosity, $decorated, $formatter);
-
-        $this->stderr = new StreamOutput(fopen('php://stderr', 'w'), $verbosity, $decorated, $this->getFormatter());
+        $this->stderr = new StreamOutput($this->openErrorStream(), $verbosity, $decorated, $this->getFormatter());
     }
 
     /**
@@ -9700,15 +9780,53 @@ class ConsoleOutput extends StreamOutput implements ConsoleOutputInterface
      * Returns true if current environment supports writing console output to
      * STDOUT.
      *
-     * IBM iSeries (OS400) exhibits character-encoding issues when writing to
-     * STDOUT and doesn't properly convert ASCII to EBCDIC, resulting in garbage
-     * output.
-     *
      * @return bool
      */
     protected function hasStdoutSupport()
     {
-        return ('OS400' != php_uname('s'));
+        return false === $this->isRunningOS400();
+    }
+
+    /**
+     * Returns true if current environment supports writing console output to
+     * STDERR.
+     *
+     * @return bool
+     */
+    protected function hasStderrSupport()
+    {
+        return false === $this->isRunningOS400();
+    }
+
+    /**
+     * Checks if current executing environment is IBM iSeries (OS400), which
+     * doesn't properly convert character-encodings between ASCII to EBCDIC.
+     *
+     * @return bool
+     */
+    private function isRunningOS400()
+    {
+        return 'OS400' === php_uname('s');
+    }
+
+    /**
+     * @return resource
+     */
+    private function openOutputStream()
+    {
+        $outputStream = $this->hasStdoutSupport() ? 'php://stdout' : 'php://output';
+
+        return @fopen($outputStream, 'w') ?: fopen('php://output', 'w');
+    }
+
+    /**
+     * @return resource
+     */
+    private function openErrorStream()
+    {
+        $errorStream = $this->hasStderrSupport() ? 'php://stderr' : 'php://output';
+
+        return fopen($errorStream, 'w');
     }
 }
 <?php
@@ -11213,7 +11331,7 @@ class ProgressHelper extends Helper
     public function __construct($triggerDeprecationError = true)
     {
         if ($triggerDeprecationError) {
-            trigger_error('The '.__CLASS__.' class is deprecated since version 2.5 and will be removed in 3.0. Use the Symfony\Component\Console\Helper\ProgressBar class instead.', E_USER_DEPRECATED);
+            @trigger_error('The '.__CLASS__.' class is deprecated since version 2.5 and will be removed in 3.0. Use the Symfony\Component\Console\Helper\ProgressBar class instead.', E_USER_DEPRECATED);
         }
     }
 
@@ -11830,7 +11948,7 @@ class ProgressBar
      */
     public function getStep()
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in 3.0. Use the getProgress() method instead.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in 3.0. Use the getProgress() method instead.', E_USER_DEPRECATED);
 
         return $this->getProgress();
     }
@@ -12021,13 +12139,13 @@ class ProgressBar
      */
     public function setCurrent($step)
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in 3.0. Use the setProgress() method instead.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in 3.0. Use the setProgress() method instead.', E_USER_DEPRECATED);
 
         $this->setProgress($step);
     }
 
     /**
-     * Sets whether to overwrite the progressbar, false for new line
+     * Sets whether to overwrite the progressbar, false for new line.
      *
      * @param bool $overwrite
      */
@@ -12054,8 +12172,8 @@ class ProgressBar
             $this->max = $step;
         }
 
-        $prevPeriod = intval($this->step / $this->redrawFreq);
-        $currPeriod = intval($step / $this->redrawFreq);
+        $prevPeriod = (int) ($this->step / $this->redrawFreq);
+        $currPeriod = (int) ($step / $this->redrawFreq);
         $this->step = $step;
         $this->percent = $this->max ? (float) $this->step / $this->max : 0;
         if ($prevPeriod !== $currPeriod || $this->max === $step) {
@@ -12299,7 +12417,7 @@ class DialogHelper extends InputAwareHelper
     public function __construct($triggerDeprecationError = true)
     {
         if ($triggerDeprecationError) {
-            trigger_error('"Symfony\Component\Console\Helper\DialogHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\QuestionHelper" instead.', E_USER_DEPRECATED);
+            @trigger_error('"Symfony\Component\Console\Helper\DialogHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\QuestionHelper" instead.', E_USER_DEPRECATED);
         }
     }
 
@@ -12734,19 +12852,19 @@ class DialogHelper extends InputAwareHelper
      */
     private function validateAttempts($interviewer, OutputInterface $output, $validator, $attempts)
     {
-        $error = null;
+        $e = null;
         while (false === $attempts || $attempts--) {
-            if (null !== $error) {
-                $output->writeln($this->getHelperSet()->get('formatter')->formatBlock($error->getMessage(), 'error'));
+            if (null !== $e) {
+                $output->writeln($this->getHelperSet()->get('formatter')->formatBlock($e->getMessage(), 'error'));
             }
 
             try {
                 return call_user_func($validator, $interviewer());
-            } catch (\Exception $error) {
+            } catch (\Exception $e) {
             }
         }
 
-        throw $error;
+        throw $e;
     }
 }
 <?php
@@ -12922,7 +13040,7 @@ class Table
         if ($row instanceof TableSeparator) {
             $this->rows[] = $row;
 
-            return;
+            return $this;
         }
 
         if (!is_array($row)) {
@@ -13136,7 +13254,7 @@ class Table
         $unmergedRows = array();
         foreach ($rows[$line] as $column => $cell) {
             if ($cell instanceof TableCell && $cell->getRowspan() > 1) {
-                $nbLines = $cell->getRowspan()-1;
+                $nbLines = $cell->getRowspan() - 1;
                 $lines = array($cell);
                 if (strstr($cell, "\n")) {
                     $lines = explode("\n", $cell);
@@ -13163,7 +13281,7 @@ class Table
                     array_splice($rows[$unmergedRowKey], $cellKey, 0, array($cell));
                 }
             } else {
-                $row = $this->copyRow($rows, $unmergedRowKey-1);
+                $row = $this->copyRow($rows, $unmergedRowKey - 1);
                 foreach ($unmergedRow as $column => $cell) {
                     if (!empty($cell)) {
                         $row[$column] = $unmergedRow[$column];
@@ -13227,7 +13345,7 @@ class Table
     {
         $columns = count($row);
         foreach ($row as $column) {
-            $columns += $column instanceof TableCell ? ($column->getColspan()-1) : 0;
+            $columns += $column instanceof TableCell ? ($column->getColspan() - 1) : 0;
         }
 
         return $columns;
@@ -13242,11 +13360,11 @@ class Table
      */
     private function getRowColumns($row)
     {
-        $columns = range(0, $this->numberOfColumns-1);
+        $columns = range(0, $this->numberOfColumns - 1);
         foreach ($row as $cellKey => $cell) {
             if ($cell instanceof TableCell && $cell->getColspan() > 1) {
                 // exclude grouped columns.
-                $columns = array_diff($columns, range($cellKey+1, $cellKey + $cell->getColspan()-1));
+                $columns = array_diff($columns, range($cellKey + 1, $cellKey + $cell->getColspan() - 1));
             }
         }
 
@@ -13301,12 +13419,13 @@ class Table
     {
         if (isset($row[$column])) {
             $cell = $row[$column];
+            $cellWidth = Helper::strlenWithoutDecoration($this->output->getFormatter(), $cell);
             if ($cell instanceof TableCell && $cell->getColspan() > 1) {
                 // we assume that cell value will be across more than one column.
-                $cell = substr($cell, 0, strlen($cell)/$cell->getColspan());
+                $cellWidth = $cellWidth / $cell->getColspan();
             }
 
-            return Helper::strlenWithoutDecoration($this->output->getFormatter(), $cell);
+            return $cellWidth;
         }
 
         return 0;
@@ -13393,7 +13512,7 @@ class TableHelper extends Helper
     public function __construct($triggerDeprecationError = true)
     {
         if ($triggerDeprecationError) {
-            trigger_error('The '.__CLASS__.' class is deprecated since version 2.5 and will be removed in 3.0. Use the Symfony\Component\Console\Helper\Table class instead.', E_USER_DEPRECATED);
+            @trigger_error('The '.__CLASS__.' class is deprecated since version 2.5 and will be removed in 3.0. Use the Symfony\Component\Console\Helper\Table class instead.', E_USER_DEPRECATED);
         }
 
         $this->table = new Table(new NullOutput());
@@ -14013,7 +14132,7 @@ namespace Symfony\Component\Console\Helper;
  */
 class DebugFormatterHelper extends Helper
 {
-    private $colors = array('black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white');
+    private $colors = array('black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'default');
     private $started = array();
     private $count = -1;
 
@@ -14248,11 +14367,11 @@ class HelperSet implements \IteratorAggregate
         }
 
         if ('dialog' === $name && $this->helpers[$name] instanceof DialogHelper) {
-            trigger_error('"Symfony\Component\Console\Helper\DialogHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\QuestionHelper" instead.', E_USER_DEPRECATED);
+            @trigger_error('"Symfony\Component\Console\Helper\DialogHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\QuestionHelper" instead.', E_USER_DEPRECATED);
         } elseif ('progress' === $name && $this->helpers[$name] instanceof ProgressHelper) {
-            trigger_error('"Symfony\Component\Console\Helper\ProgressHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\ProgressBar" instead.', E_USER_DEPRECATED);
+            @trigger_error('"Symfony\Component\Console\Helper\ProgressHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\ProgressBar" instead.', E_USER_DEPRECATED);
         } elseif ('table' === $name && $this->helpers[$name] instanceof TableHelper) {
-            trigger_error('"Symfony\Component\Console\Helper\TableHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\Table" instead.', E_USER_DEPRECATED);
+            @trigger_error('"Symfony\Component\Console\Helper\TableHelper" is deprecated since version 2.5 and will be removed in 3.0. Use "Symfony\Component\Console\Helper\Table" instead.', E_USER_DEPRECATED);
         }
 
         return $this->helpers[$name];
@@ -15045,7 +15164,7 @@ class Command
      */
     public function asText()
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new TextDescriptor();
         $output = new BufferedOutput(BufferedOutput::VERBOSITY_NORMAL, true);
@@ -15065,7 +15184,7 @@ class Command
      */
     public function asXml($asDom = false)
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new XmlDescriptor();
 
@@ -15166,7 +15285,7 @@ EOF
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         if ($input->getOption('xml')) {
-            trigger_error('The --xml option was deprecated in version 2.7 and will be removed in version 3.0. Use the --format option instead.', E_USER_DEPRECATED);
+            @trigger_error('The --xml option was deprecated in version 2.7 and will be removed in version 3.0. Use the --format option instead.', E_USER_DEPRECATED);
 
             $input->setOption('format', 'xml');
         }
@@ -15271,7 +15390,7 @@ EOF
         }
 
         if ($input->getOption('xml')) {
-            trigger_error('The --xml option was deprecated in version 2.7 and will be removed in version 3.0. Use the --format option instead.', E_USER_DEPRECATED);
+            @trigger_error('The --xml option was deprecated in version 2.7 and will be removed in version 3.0. Use the --format option instead.', E_USER_DEPRECATED);
 
             $input->setOption('format', 'xml');
         }
@@ -15756,7 +15875,8 @@ class ChoiceQuestion extends Question
                 if (false === $result) {
                     throw new \InvalidArgumentException(sprintf($errorMessage, $value));
                 }
-                array_push($multiselectChoices, (string) $result);
+
+                $multiselectChoices[] = (string) $result;
             }
 
             if ($multiselect) {
@@ -16428,7 +16548,7 @@ class OutputFormatter implements OutputFormatterInterface
      */
     public static function escape($text)
     {
-        return preg_replace('/([^\\\\]?)</is', '$1\\<', $text);
+        return preg_replace('/([^\\\\]?)</', '$1\\<', $text);
     }
 
     /**
@@ -16541,7 +16661,7 @@ class OutputFormatter implements OutputFormatterInterface
         $offset = 0;
         $output = '';
         $tagRegex = '[a-z][a-z0-9_=;-]*';
-        preg_match_all("#<(($tagRegex) | /($tagRegex)?)>#isx", $message, $matches, PREG_OFFSET_CAPTURE);
+        preg_match_all("#<(($tagRegex) | /($tagRegex)?)>#ix", $message, $matches, PREG_OFFSET_CAPTURE);
         foreach ($matches[0] as $i => $match) {
             $pos = $match[1];
             $text = $match[0];
@@ -16666,6 +16786,7 @@ class OutputFormatterStyle implements OutputFormatterStyleInterface
         'magenta' => array('set' => 35, 'unset' => 39),
         'cyan' => array('set' => 36, 'unset' => 39),
         'white' => array('set' => 37, 'unset' => 39),
+        'default' => array('set' => 39, 'unset' => 39),
     );
     private static $availableBackgroundColors = array(
         'black' => array('set' => 40, 'unset' => 49),
@@ -16676,6 +16797,7 @@ class OutputFormatterStyle implements OutputFormatterStyleInterface
         'magenta' => array('set' => 45, 'unset' => 49),
         'cyan' => array('set' => 46, 'unset' => 49),
         'white' => array('set' => 47, 'unset' => 49),
+        'default' => array('set' => 49, 'unset' => 49),
     );
     private static $availableOptions = array(
         'bold' => array('set' => 1, 'unset' => 22),
@@ -17119,7 +17241,7 @@ class StringInput extends ArgvInput
     public function __construct($input, InputDefinition $definition = null)
     {
         if ($definition) {
-            trigger_error('The $definition argument of the '.__METHOD__.' method is deprecated and will be removed in 3.0. Set this parameter with the bind() method instead.', E_USER_DEPRECATED);
+            @trigger_error('The $definition argument of the '.__METHOD__.' method is deprecated and will be removed in 3.0. Set this parameter with the bind() method instead.', E_USER_DEPRECATED);
         }
 
         parent::__construct(array(), null);
@@ -17381,13 +17503,13 @@ class ArgvInput extends Input
 
         $option = $this->definition->getOption($name);
 
-        // Convert false values (from a previous call to substr()) to null
-        if (false === $value) {
+        // Convert empty values to null
+        if (!isset($value[0])) {
             $value = null;
         }
 
         if (null !== $value && !$option->acceptValue()) {
-            throw new \RuntimeException(sprintf('The "--%s" option does not accept a value.', $name, $value));
+            throw new \RuntimeException(sprintf('The "--%s" option does not accept a value.', $name));
         }
 
         if (null === $value && $option->acceptValue() && count($this->parsed)) {
@@ -18798,7 +18920,7 @@ class InputDefinition
      */
     public function asText()
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new TextDescriptor();
         $output = new BufferedOutput(BufferedOutput::VERBOSITY_NORMAL, true);
@@ -18818,7 +18940,7 @@ class InputDefinition
      */
     public function asXml($asDom = false)
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new XmlDescriptor();
 
@@ -19322,7 +19444,7 @@ class Application
         if (empty($namespaces)) {
             $message = sprintf('There are no commands defined in the "%s" namespace.', $namespace);
 
-            if ($alternatives = $this->findAlternatives($namespace, $allNamespaces, array())) {
+            if ($alternatives = $this->findAlternatives($namespace, $allNamespaces)) {
                 if (1 == count($alternatives)) {
                     $message .= "\n\nDid you mean this?\n    ";
                 } else {
@@ -19371,7 +19493,7 @@ class Application
 
             $message = sprintf('Command "%s" is not defined.', $name);
 
-            if ($alternatives = $this->findAlternatives($name, $allCommands, array())) {
+            if ($alternatives = $this->findAlternatives($name, $allCommands)) {
                 if (1 == count($alternatives)) {
                     $message .= "\n\nDid you mean this?\n    ";
                 } else {
@@ -19462,7 +19584,7 @@ class Application
      */
     public function asText($namespace = null, $raw = false)
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new TextDescriptor();
         $output = new BufferedOutput(BufferedOutput::VERBOSITY_NORMAL, !$raw);
@@ -19483,7 +19605,7 @@ class Application
      */
     public function asXml($namespace = null, $asDom = false)
     {
-        trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0.', E_USER_DEPRECATED);
 
         $descriptor = new XmlDescriptor();
 
@@ -19920,7 +20042,7 @@ class Application
             }
         }
 
-        $alternatives = array_filter($alternatives, function ($lev) use ($threshold) { return $lev < 2*$threshold; });
+        $alternatives = array_filter($alternatives, function ($lev) use ($threshold) { return $lev < 2 * $threshold; });
         asort($alternatives);
 
         return array_keys($alternatives);
@@ -19976,7 +20098,7 @@ class Application
             $lines[] = str_pad($line, $width);
             $line = $char;
         }
-        if (strlen($line)) {
+        if ('' !== $line) {
             $lines[] = count($lines) ? str_pad($line, $width) : $line;
         }
 
@@ -20059,7 +20181,7 @@ class Inline
 
         $value = trim($value);
 
-        if (0 == strlen($value)) {
+        if ('' === $value) {
             return '';
         }
 
@@ -20741,6 +20863,8 @@ class Yaml
      * you must validate the input before calling this method. Passing a file
      * as an input is a deprecated feature and will be removed in 3.0.
      *
+     * Note: the ability to pass file names to the Yaml::parse method is deprecated since version 2.2 and will be removed in 3.0. Pass the YAML contents of the file instead.
+     *
      * @param string $input                  Path to a YAML file or a string containing YAML
      * @param bool   $exceptionOnInvalidType True if an exception must be thrown on invalid types false otherwise
      * @param bool   $objectSupport          True if object support is enabled, false otherwise
@@ -20750,8 +20874,6 @@ class Yaml
      *
      * @throws ParseException If the YAML is not valid
      *
-     * @deprecated The ability to pass file names to the Yaml::parse method is deprecated since version 2.2 and will be removed in 3.0. Pass the YAML contents of the file instead.
-     *
      * @api
      */
     public static function parse($input, $exceptionOnInvalidType = false, $objectSupport = false, $objectForMap = false)
@@ -20759,7 +20881,7 @@ class Yaml
         // if input is a file, process it
         $file = '';
         if (strpos($input, "\n") === false && is_file($input)) {
-            trigger_error('The ability to pass file names to the '.__METHOD__.' method is deprecated since version 2.2 and will be removed in 3.0. Pass the YAML contents of the file instead.', E_USER_DEPRECATED);
+            @trigger_error('The ability to pass file names to the '.__METHOD__.' method is deprecated since version 2.2 and will be removed in 3.0. Pass the YAML contents of the file instead.', E_USER_DEPRECATED);
 
             if (false === is_readable($input)) {
                 throw new ParseException(sprintf('Unable to parse "%s" as the file is not readable.', $input));
@@ -21259,7 +21381,7 @@ class Parser
                 }
 
                 // 1-liner optionally followed by newline(s)
-                if ($this->lines[0] === trim($value)) {
+                if (is_string($value) && $this->lines[0] === trim($value)) {
                     try {
                         $value = Inline::parse($this->lines[0], $exceptionOnInvalidType, $objectSupport, $objectForMap, $this->refs);
                     } catch (ParseException $e) {
@@ -21381,7 +21503,7 @@ class Parser
             return;
         }
 
-        if ($inSequence && $oldLineIndentation === $newIndent && '-' === $data[0][0]) {
+        if ($inSequence && $oldLineIndentation === $newIndent && isset($data[0][0]) && '-' === $data[0][0]) {
             // the previous line contained a dash but no item content, this line is a sequence item with the same indentation
             // and therefore no nested list or mapping
             $this->moveToPreviousLine();
@@ -21571,9 +21693,9 @@ class Parser
 
         // deal with trailing newlines as indicated
         if ('' === $indicator) {
-            $text = preg_replace('/\n+$/s', "\n", $text);
+            $text = preg_replace('/\n+$/', "\n", $text);
         } elseif ('-' === $indicator) {
-            $text = preg_replace('/\n+$/s', '', $text);
+            $text = preg_replace('/\n+$/', '', $text);
         }
 
         return $text;
@@ -21672,7 +21794,7 @@ class Parser
             $value = $trimmedValue;
 
             // remove end of the document marker (...)
-            $value = preg_replace('#\.\.\.\s*$#s', '', $value);
+            $value = preg_replace('#\.\.\.\s*$#', '', $value);
         }
 
         return $value;
@@ -21911,10 +22033,6 @@ if (!defined('T_TRAIT')) {
 /**
  * PHPLOC code analyser.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 1.0.0
  */
 class Analyser
@@ -21943,70 +22061,76 @@ class Analyser
      * @var array
      */
     private $count = array(
-      'files'                       => 0,
-      'loc'                         => 0,
-      'lloc'                        => 0,
-      'llocClasses'                 => 0,
-      'llocFunctions'               => 0,
-      'llocGlobal'                  => 0,
-      'cloc'                        => 0,
-      'ccn'                         => 0,
-      'ccnMethods'                  => 0,
-      'interfaces'                  => 0,
-      'traits'                      => 0,
-      'classes'                     => 0,
-      'abstractClasses'             => 0,
-      'concreteClasses'             => 0,
-      'functions'                   => 0,
-      'namedFunctions'              => 0,
-      'anonymousFunctions'          => 0,
-      'methods'                     => 0,
-      'publicMethods'               => 0,
-      'nonPublicMethods'            => 0,
-      'nonStaticMethods'            => 0,
-      'staticMethods'               => 0,
-      'constants'                   => 0,
-      'classConstants'              => 0,
-      'globalConstants'             => 0,
-      'testClasses'                 => 0,
-      'testMethods'                 => 0,
-      'ccnByLloc'                   => 0,
-      'llocByNof'                   => 0,
-      'methodCalls'                 => 0,
-      'staticMethodCalls'           => 0,
-      'instanceMethodCalls'         => 0,
-      'attributeAccesses'           => 0,
-      'staticAttributeAccesses'     => 0,
-      'instanceAttributeAccesses'   => 0,
-      'globalAccesses'              => 0,
-      'globalVariableAccesses'      => 0,
-      'superGlobalVariableAccesses' => 0,
-      'globalConstantAccesses'      => 0,
-      'methodCcnMin'                => 0,
-      'methodCcnAvg'                => 0,
-      'methodCcnMax'                => 0,
-      'methodLlocMin'               => 0,
-      'methodLlocAvg'               => 0,
-      'methodLlocMax'               => 0
+        'files'                       => 0,
+        'loc'                         => 0,
+        'lloc'                        => 0,
+        'llocClasses'                 => 0,
+        'llocFunctions'               => 0,
+        'llocGlobal'                  => 0,
+        'cloc'                        => 0,
+        'ccn'                         => 0,
+        'ccnMethods'                  => 0,
+        'interfaces'                  => 0,
+        'traits'                      => 0,
+        'classes'                     => 0,
+        'abstractClasses'             => 0,
+        'concreteClasses'             => 0,
+        'functions'                   => 0,
+        'namedFunctions'              => 0,
+        'anonymousFunctions'          => 0,
+        'methods'                     => 0,
+        'publicMethods'               => 0,
+        'nonPublicMethods'            => 0,
+        'nonStaticMethods'            => 0,
+        'staticMethods'               => 0,
+        'constants'                   => 0,
+        'classConstants'              => 0,
+        'globalConstants'             => 0,
+        'testClasses'                 => 0,
+        'testMethods'                 => 0,
+        'ccnByLloc'                   => 0,
+        'llocByNof'                   => 0,
+        'methodCalls'                 => 0,
+        'staticMethodCalls'           => 0,
+        'instanceMethodCalls'         => 0,
+        'attributeAccesses'           => 0,
+        'staticAttributeAccesses'     => 0,
+        'instanceAttributeAccesses'   => 0,
+        'globalAccesses'              => 0,
+        'globalVariableAccesses'      => 0,
+        'superGlobalVariableAccesses' => 0,
+        'globalConstantAccesses'      => 0,
+        'classCcnMin'                 => 0,
+        'classCcnAvg'                 => 0,
+        'classCcnMax'                 => 0,
+        'classLlocMin'                => 0,
+        'classLlocAvg'                => 0,
+        'classLlocMax'                => 0,
+        'methodCcnMin'                => 0,
+        'methodCcnAvg'                => 0,
+        'methodCcnMax'                => 0,
+        'methodLlocMin'               => 0,
+        'methodLlocAvg'               => 0,
+        'methodLlocMax'               => 0
     );
 
     /**
      * @var array
      */
     private $superGlobals = array(
-      '$_ENV' => true,
-      '$_POST' => true,
-      '$_GET' => true,
-      '$_COOKIE' => true,
-      '$_SERVER' => true,
-      '$_FILES' => true,
-      '$_REQUEST' => true,
-      '$HTTP_ENV_VARS' => true,
-      '$HTTP_POST_VARS' => true,
-      '$HTTP_GET_VARS' => true,
-      '$HTTP_COOKIE_VARS' => true,
-      '$HTTP_SERVER_VARS' => true,
-      '$HTTP_POST_FILES' => true
+        '$_ENV'             => true,
+        '$_POST'            => true,
+        '$_GET'             => true,
+        '$_COOKIE'          => true,
+        '$_SERVER'          => true,
+        '$_FILES'           => true,
+        '$_REQUEST'         => true,
+        '$HTTP_ENV_VARS'    => true,
+        '$HTTP_POST_VARS'   => true,
+        '$HTTP_GET_VARS'    => true,
+        '$HTTP_COOKIE_VARS' => true,
+        '$HTTP_SERVER_VARS' => true,
+        '$HTTP_POST_FILES'  => true
     );
 
     /**
@@ -22032,8 +22156,8 @@ class Analyser
     /**
      * Processes a set of files.
      *
-     * @param  array   $files
-     * @param  boolean $countTests
+     * @param  array $files
+     * @param  bool  $countTests
      * @return array
      * @since  Method available since Release 1.2.0
      */
@@ -22166,8 +22290,8 @@ class Analyser
     /**
      * Processes a single file.
      *
-     * @param string  $filename
-     * @param boolean $countTests
+     * @param string $filename
+     * @param bool   $countTests
      */
     public function countFile($filename, $countTests)
     {
@@ -22234,9 +22358,9 @@ class Analyser
                             $functionName = null;
 
                             if ($currentMethodData !== null) {
-                                $this->methodCcn[] = $currentMethodData['ccn'];
+                                $this->methodCcn[]  = $currentMethodData['ccn'];
                                 $this->methodLloc[] = $currentMethodData['lloc'];
-                                $currentMethodData = null;
+                                $currentMethodData  = null;
                             }
                         } elseif ($block == $className) {
                             $className         = null;
@@ -22480,8 +22604,8 @@ class Analyser
     }
 
     /**
-     * @param  array   $tokens
-     * @param  integer $i
+     * @param  array  $tokens
+     * @param  int    $i
      * @return string
      * @since  Method available since Release 1.3.0
      */
@@ -22505,9 +22629,9 @@ class Analyser
     }
 
     /**
-     * @param  string  $namespace
-     * @param  array   $tokens
-     * @param  integer $i
+     * @param  string $namespace
+     * @param  array  $tokens
+     * @param  int    $i
      * @return string
      * @since  Method available since Release 1.3.0
      */
@@ -22539,14 +22663,14 @@ class Analyser
 
     /**
      * @param  string $className
-     * @return boolean
+     * @return bool
      * @since  Method available since Release 1.2.0
      */
     private function isTestClass($className)
     {
         $parent = $this->classes[$className];
         $result = false;
-        $count = 0;
+        $count  = 0;
 
         // Check ancestry for PHPUnit_Framework_TestCase.
         while ($parent !== null) {
@@ -22584,12 +22708,12 @@ class Analyser
     }
 
     /**
-     * @param  string  $functionName
-     * @param  integer $visibility
-     * @param  boolean $static
-     * @param  array   $tokens
-     * @param  integer $currentToken
-     * @return boolean
+     * @param  string $functionName
+     * @param  int    $visibility
+     * @param  bool   $static
+     * @param  array  $tokens
+     * @param  int    $currentToken
+     * @return bool
      * @since  Method available since Release 2.0.0
      */
     private function isTestMethod($functionName, $visibility, $static, array $tokens, $currentToken)
@@ -22615,9 +22739,9 @@ class Analyser
     }
 
     /**
-     * @param  array   $tokens
-     * @param  integer $start
-     * @return boolean
+     * @param  array $tokens
+     * @param  int   $start
+     * @return bool
      */
     private function getNextNonWhitespaceTokenPos(array $tokens, $start)
     {
@@ -22635,9 +22759,9 @@ class Analyser
     }
 
     /**
-     * @param  array   $tokens
-     * @param  integer $start
-     * @return boolean
+     * @param  array $tokens
+     * @param  int   $start
+     * @return bool
      */
     private function getPreviousNonWhitespaceTokenPos(array $tokens, $start)
     {
@@ -22655,9 +22779,9 @@ class Analyser
     }
 
     /**
-     * @param  array   $tokens
-     * @param  integer $i
-     * @return boolean
+     * @param  array $tokens
+     * @param  int   $i
+     * @return bool
      */
     private function isClassDeclaration(array $tokens, $i)
     {
@@ -22698,10 +22822,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\ProgressBar;
 
 /**
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 2.0.0
  */
 class Command extends AbstractCommand
@@ -22778,7 +22898,7 @@ class Command extends AbstractCommand
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return null|integer null or 0 if everything went fine, or an error code
+     * @return null|int null or 0 if everything went fine, or an error code
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -22793,7 +22913,7 @@ class Command extends AbstractCommand
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return null|integer null or 0 if everything went fine, or an error code
+     * @return null|int null or 0 if everything went fine, or an error code
      */
     private function executeSingle(InputInterface $input, OutputInterface $output)
     {
@@ -22833,7 +22953,7 @@ class Command extends AbstractCommand
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return null|integer null or 0 if everything went fine, or an error code
+     * @return null|int null or 0 if everything went fine, or an error code
      */
     private function executeHistory(InputInterface $input, OutputInterface $output)
     {
@@ -22870,7 +22990,7 @@ class Command extends AbstractCommand
             );
 
             if ($_count) {
-                $_count['commit'] = $revision['sha1'];
+                $_count['commit']                                 = $revision['sha1'];
                 $count[$revision['date']->format(\DateTime::W3C)] = $_count;
             }
 
@@ -22948,17 +23068,13 @@ use Symfony\Component\Console\Input\ArrayInput;
 /**
  * TextUI frontend for PHPLOC.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 2.0.0
  */
 class Application extends AbstractApplication
 {
     public function __construct()
     {
-        $version = new Version('2.1.3', dirname(dirname(__DIR__)));
+        $version = new Version('2.1.4', dirname(dirname(__DIR__)));
         parent::__construct('phploc', $version->getVersion());
     }
 
@@ -23006,7 +23122,7 @@ class Application extends AbstractApplication
      * @param InputInterface  $input  An Input instance
      * @param OutputInterface $output An Output instance
      *
-     * @return integer 0 if everything went fine, or an error code
+     * @return int 0 if everything went fine, or an error code
      */
     public function doRun(InputInterface $input, OutputInterface $output)
     {
@@ -23046,10 +23162,6 @@ namespace SebastianBergmann\PHPLOC\Log\CSV;
 /**
  * A CSV ResultPrinter for the TextUI.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 1.6.0
  */
 class Single
@@ -23060,47 +23172,47 @@ class Single
      * @var array
      */
     private $colmap = array(
-        'directories' => 'Directories',
-        'files' => 'Files',
-        'loc' => 'Lines of Code (LOC)',
-        'ccnByLloc' => 'Cyclomatic Complexity / Lines of Code',
-        'cloc' => 'Comment Lines of Code (CLOC)',
-        'ncloc' => 'Non-Comment Lines of Code (NCLOC)',
-        'lloc' => 'Logical Lines of Code (LLOC)',
-        'llocGlobal' => 'LLOC outside functions or classes',
-        'namespaces' => 'Namespaces',
-        'interfaces' => 'Interfaces',
-        'traits' => 'Traits',
-        'classes' => 'Classes',
-        'abstractClasses' => 'Abstract Classes',
-        'concreteClasses' => 'Concrete Classes',
-        'llocClasses' => 'Classes Length (LLOC)',
-        'methods' => 'Methods',
-        'nonStaticMethods' => 'Non-Static Methods',
-        'staticMethods' => 'Static Methods',
-        'publicMethods' => 'Public Methods',
-        'nonPublicMethods' => 'Non-Public Methods',
-        'methodCcnAvg' => 'Cyclomatic Complexity / Number of Methods',
-        'functions' => 'Functions',
-        'namedFunctions' => 'Named Functions',
-        'anonymousFunctions' => 'Anonymous Functions',
-        'llocFunctions' => 'Functions Length (LLOC)',
-        'llocByNof' => 'Average Function Length (LLOC)',
-        'constants' => 'Constants',
-        'globalConstants' => 'Global Constants',
-        'classConstants' => 'Class Constants',
-        'attributeAccesses' => 'Attribute Accesses',
-        'instanceAttributeAccesses' => 'Non-Static Attribute Accesses',
-        'staticAttributeAccesses' => 'Static Attribute Accesses',
-        'methodCalls' => 'Method Calls',
-        'instanceMethodCalls' => 'Non-Static Method Calls',
-        'staticMethodCalls' => 'Static Method Calls',
-        'globalAccesses' => 'Global Accesses',
-        'globalVariableAccesses' => 'Global Variable Accesses',
+        'directories'                 => 'Directories',
+        'files'                       => 'Files',
+        'loc'                         => 'Lines of Code (LOC)',
+        'ccnByLloc'                   => 'Cyclomatic Complexity / Lines of Code',
+        'cloc'                        => 'Comment Lines of Code (CLOC)',
+        'ncloc'                       => 'Non-Comment Lines of Code (NCLOC)',
+        'lloc'                        => 'Logical Lines of Code (LLOC)',
+        'llocGlobal'                  => 'LLOC outside functions or classes',
+        'namespaces'                  => 'Namespaces',
+        'interfaces'                  => 'Interfaces',
+        'traits'                      => 'Traits',
+        'classes'                     => 'Classes',
+        'abstractClasses'             => 'Abstract Classes',
+        'concreteClasses'             => 'Concrete Classes',
+        'llocClasses'                 => 'Classes Length (LLOC)',
+        'methods'                     => 'Methods',
+        'nonStaticMethods'            => 'Non-Static Methods',
+        'staticMethods'               => 'Static Methods',
+        'publicMethods'               => 'Public Methods',
+        'nonPublicMethods'            => 'Non-Public Methods',
+        'methodCcnAvg'                => 'Cyclomatic Complexity / Number of Methods',
+        'functions'                   => 'Functions',
+        'namedFunctions'              => 'Named Functions',
+        'anonymousFunctions'          => 'Anonymous Functions',
+        'llocFunctions'               => 'Functions Length (LLOC)',
+        'llocByNof'                   => 'Average Function Length (LLOC)',
+        'constants'                   => 'Constants',
+        'globalConstants'             => 'Global Constants',
+        'classConstants'              => 'Class Constants',
+        'attributeAccesses'           => 'Attribute Accesses',
+        'instanceAttributeAccesses'   => 'Non-Static Attribute Accesses',
+        'staticAttributeAccesses'     => 'Static Attribute Accesses',
+        'methodCalls'                 => 'Method Calls',
+        'instanceMethodCalls'         => 'Non-Static Method Calls',
+        'staticMethodCalls'           => 'Static Method Calls',
+        'globalAccesses'              => 'Global Accesses',
+        'globalVariableAccesses'      => 'Global Variable Accesses',
         'superGlobalVariableAccesses' => 'Super-Global Variable Accesses',
-        'globalConstantAccesses' => 'Global Constant Accesses',
-        'testClasses' => 'Test Classes',
-        'testMethods' => 'Test Methods'
+        'globalConstantAccesses'      => 'Global Constant Accesses',
+        'testClasses'                 => 'Test Classes',
+        'testMethods'                 => 'Test Methods'
     );
 
     /**
@@ -23118,7 +23230,7 @@ class Single
     }
 
     /**
-     * @param  array $count
+     * @param  array  $count
      * @return string
      */
     protected function getKeysLine(array $count)
@@ -23127,7 +23239,7 @@ class Single
     }
 
     /**
-     * @param  array $count
+     * @param  array                     $count
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -23160,10 +23272,6 @@ namespace SebastianBergmann\PHPLOC\Log\CSV;
 /**
  * A CSV ResultPrinter for the TextUI.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 2.0.0
  */
 class History extends Single
@@ -23186,7 +23294,7 @@ class History extends Single
     }
 
     /**
-     * @param  array $count
+     * @param  array  $count
      * @return string
      */
     protected function getValuesLine(array $count)
@@ -23199,7 +23307,7 @@ class History extends Single
     }
 
     /**
-     * @param  array $count
+     * @param  array  $count
      * @return string
      */
     protected function getKeysLine(array $count)
@@ -23208,6 +23316,7 @@ class History extends Single
             'Date',
             'Commit',
         );
+
         return implode(',', $keys) . ',' . parent::getKeysLine($count);
     }
 }
@@ -23226,10 +23335,6 @@ namespace SebastianBergmann\PHPLOC\Log;
 /**
  * An XML ResultPrinter for the TextUI.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 1.1.0
  */
 class XML
@@ -23242,7 +23347,7 @@ class XML
      */
     public function printResult($filename, array $count)
     {
-        $document = new \DOMDocument('1.0', 'UTF-8');
+        $document               = new \DOMDocument('1.0', 'UTF-8');
         $document->formatOutput = true;
 
         $root = $document->createElement('phploc');
@@ -23287,10 +23392,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * A ResultPrinter for the TextUI.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phploc/tree
  * @since     Class available since Release 1.0.0
  */
 class Text
@@ -23300,7 +23401,7 @@ class Text
      *
      * @param OutputInterface $output
      * @param array           $count
-     * @param boolean         $printTests
+     * @param bool            $printTests
      */
     public function printResult(OutputInterface $output, array $count, $printTests)
     {
@@ -23709,4 +23810,4 @@ class Configuration
         return $this->basePath . DIRECTORY_SEPARATOR . $path;
     }
 }
-O1ù;g˚≥û2éÈ{Yp§S¸§ÆØ?kË°ÔG:á3¶t¢u–Nï0ó.@WŒÈµ–ƒøãF%'”Õ£¢6   GBMB
+˙–]`Ö¢#·C∑Ù∞+Åﬁ:≠CZÎå gDW˜"¶Å"èïñı‘Ì^:¯«πFì-í|_çŒ™™[\Ù   GBMB
